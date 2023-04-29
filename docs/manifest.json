@@ -1,0 +1,1542 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Development/nospoonlab-ai-library/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Agent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.AgentConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.AgentConstants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.AgentMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.AgentMemory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Language.EnglishAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Language.EnglishAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Language.IAgentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Language.IAgentLanguage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Language.SpanishAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Language.SpanishAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Language.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentExampleData.ExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentExampleData.ExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentMemoryImportance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.AgentMemoryImportance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AIAgent.Types.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AgentEmotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AgentEmotion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AgentMessageFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AgentMessageFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.AgentResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.AgentResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.EmotionFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.EmotionFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.FunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.FunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.MessageFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.MessageFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Functions.AgentFunctions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Functions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.AgentFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.AgentFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.EmotionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.EmotionProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.MessageProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.MessageProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentFunctionRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentObservationImportanceRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentObservationImportanceRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.AgentReflectionThoughtsRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.AgentReflectionThoughtsRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.Prompts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.Types.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.Types.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AIAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AIAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Agent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.AgentConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.AgentConstants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.AgentMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.AgentMemory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Language.EnglishAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Language.EnglishAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Language.IAgentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Language.IAgentLanguage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Language.SpanishAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Language.SpanishAgent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Language.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentEmotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentEmotion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentExampleData.ExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentExampleData.ExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentMemoryImportance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentMemoryImportance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentMessageFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentMessageFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.AgentResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.AgentResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.EmotionFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.EmotionFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.FunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.FunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.MessageFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.MessageFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Functions.AgentFunctions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Functions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.AgentFunctionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.AgentFunctionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.EmotionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.EmotionProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.MessageProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.MessageProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentFunctionRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentObservationImportanceRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentObservationImportanceRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.AgentReflectionThoughtsRequestPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.AgentReflectionThoughtsRequestPrompt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.Prompts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.Prompts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.Types.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.Types.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.AIUtils.BAIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.AIUtils.BAIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.AIUtils.Language.EnglishAIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.AIUtils.Language.EnglishAIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.AIUtils.Language.SpanishAIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.AIUtils.Language.SpanishAIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.AIUtils.Language.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.AIUtils.Language.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.AIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.AIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.Azure.AzureClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.Azure.AzureClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.Azure.Data.VoiceDataResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.Azure.Data.VoiceDataResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.Azure.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.Azure.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.Azure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.Azure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.NoSpoonAIRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.NoSpoonAIRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Data.NoSpoonAIExampleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Data.NoSpoonAIExampleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIEmptyStringException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIEmptyStringException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIRetryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIRetryException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIUnknownErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.NoSpoonAIUnknownErrorException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAIEmbeddingRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAIEmbeddingRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAIRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAIRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAITransformerPromptRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.NoSpoonAITransformerPromptRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.Types.Request.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.NoSpoonAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.NoSpoonAI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Extension.ModelsExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Extension.ModelsExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Extension.RoleExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Extension.RoleExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.IAIGPTService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.IAIGPTService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.IAIImageService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.IAIImageService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.IAIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.IAIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.ICloudService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.ICloudService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.IService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.IService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.AIModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.AIModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.AIRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.AIRole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.AIServiceInitData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.AIServiceInitData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.AIServiceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.AIServiceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.JsonDataFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.JsonDataFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.VoiceServiceInitData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.VoiceServiceInitData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AIEmbeddingRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AIEmbeddingRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AIEmbeddingRequestInternal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AIEmbeddingRequestInternal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AIImageRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AIImageRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.DataMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.DataMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.Function.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.FunctionCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.FunctionCall.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.FunctionDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.FunctionDetail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.FunctionParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.FunctionParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AIEmbeddingResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AIEmbeddingResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AIEmbeddingResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AIEmbeddingResponseData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AIImageResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AIImageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.DataContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.DataContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.FunctionContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.FunctionContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.GeneratedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.GeneratedData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.ImageUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.ImageUrl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.UsageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.UsageData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.AudioUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.AudioUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.MathUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.MathUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.TokenUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.TokenUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DependencyInjectionCore.DIContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DependencyInjectionCore.DIContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DependencyInjectionCore.InjectAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DependencyInjectionCore.InjectAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DependencyInjectionCore.Injectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DependencyInjectionCore.Injectable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DependencyInjectionCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DependencyInjectionCore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Attributes.ControllerFieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Attributes.ControllerFieldAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Attributes.ModelFieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Attributes.ModelFieldAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.MVC.GameController-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.MVC.GameController-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.MVC.GameControllerEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.MVC.GameControllerEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.MVC.GameModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.MVC.GameModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.MVC.GameView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.MVC.GameView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.MVC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.MVC.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Reflection.Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Reflection.Method.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Reflection.MethodStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Reflection.MethodStorage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Reflection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Reflection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Services.EventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Services.EventBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FrameworkCore.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FrameworkCore.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/change_log.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/change_log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/custom_rules_for_prompt_generation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/custom_rules_for_prompt_generation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/model_response_error_handling.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/model_response_error_handling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/prompt_constructors.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/prompt_constructors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started/requests_with_functions_calling.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started/requests_with_functions_calling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/license.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/license.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/nospoonlab.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/nospoonlab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

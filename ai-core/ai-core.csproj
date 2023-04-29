@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{B65F84DD-EF3C-4FDE-A8B3-44EAA40D373A}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>AICore</RootNamespace>
+        <AssemblyName>ai_core</AssemblyName>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>9</LangVersion>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json.Schema, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.Schema.4.0.1\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Net.Http" />
+        <Reference Include="Unity.Sentis">
+          <HintPath>..\libraries\Unity.Sentis.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+          <HintPath>..\libraries\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+          <HintPath>..\libraries\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\libraries\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="source\Infrastructure\Azure\AzureClient.cs" />
+        <Compile Include="source\Infrastructure\Azure\Data\VoiceDataResponse.cs" />
+        <Compile Include="source\Infrastructure\Azure\Data\VoiceDataResponseInternal.cs" />
+        <Compile Include="source\Infrastructure\Embedding\EmbeddingClient.cs" />
+        <Compile Include="source\Infrastructure\GoogleAI\Data\GoogleAIAuthTokenRequest.cs" />
+        <Compile Include="source\Infrastructure\GoogleAI\Data\GoogleAIDataTransformRequest.cs" />
+        <Compile Include="source\Infrastructure\GoogleAI\GoogleAIClient.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\NoSpoonAIClient.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Data\NoSpoonAIExampleData.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Data\NoSpoonAIListData.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Exceptions\NoSpoonAIUnknownErrorException.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Exceptions\NoSpoonAIEmptyStringException.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Exceptions\NoSpoonAIRetryException.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAIEmbeddingRequest.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAIRequest.cs" />
+        <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAITransformerPromptRequest.cs" />
+        <Compile Include="source\Infrastructure\OpenAI\OpenAIClient.cs" />
+        <Compile Include="source\Infrastructure\OpenAI\OpenAIConstants.cs" />
+        <Compile Include="source\Services\Extension\ModelExtension.cs" />
+        <Compile Include="source\Services\Extension\RoleExtension.cs" />
+        <Compile Include="source\Services\Extension\StringExtension.cs" />
+        <Compile Include="source\Services\Interfaces\IAIGPTService.cs" />
+        <Compile Include="source\Services\Interfaces\IAIImageService.cs" />
+        <Compile Include="source\Services\Interfaces\ICloudService.cs" />
+        <Compile Include="source\Services\Interfaces\IEmbeddingService.cs" />
+        <Compile Include="source\Services\Interfaces\IService.cs" />
+        <Compile Include="source\Services\Interfaces\ITokenizer.cs" />
+        <Compile Include="source\Services\Services.cs" />
+        <Compile Include="source\Services\Types\Data\AIModel.cs" />
+        <Compile Include="source\Services\Types\Data\AIRole.cs" />
+        <Compile Include="source\Services\Types\Data\AIServiceInitData.cs" />
+        <Compile Include="source\Services\Types\Data\AIServiceType.cs" />
+        <Compile Include="source\Services\Types\Data\VoiceServiceInitData.cs" />
+        <Compile Include="source\Services\Types\Request\AIEmbeddingRequest.cs" />
+        <Compile Include="source\Services\Types\Request\AIImageRequest.cs" />
+        <Compile Include="source\Services\Types\Request\AITransformerRequest.cs" />
+        <Compile Include="source\Services\Types\Request\AITransformerRequestInternal.cs" />
+        <Compile Include="source\Services\Types\Response\AIEmbeddingResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AIImageResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerResponseInternal.cs" />
+        <Compile Include="source\Utils\AudioUtils.cs" />
+        <Compile Include="source\Utils\FileReaderUtils.cs" />
+        <Compile Include="source\Utils\MathUtils.cs" />
+        <Compile Include="source\Utils\TokenizerUtils.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\BaseBERTTokenizer.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\BaseCasedBERTTokenizer.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\BaseUncasedBERTTokenizer.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\BERTTokenizer.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\BERTTokens.cs" />
+        <Compile Include="source\Utils\Tokenizer\BERT\IBERTTokenizer.cs" />
+        <Compile Include="source\Utils\Tokenizer\ITokenizer.cs" />
+        <Compile Include="source\Utils\TokenUtils.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_cased.txt">
+        <CustomToolNamespace>BertData</CustomToolNamespace>
+      </EmbeddedResource>
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_cased_german.txt" />
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_cased_large.txt" />
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_cased_multilingual.txt" />
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_uncased.txt" />
+      <EmbeddedResource Include="source\Utils\Tokenizer\BERT\Data\base_uncased_large.txt" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="source\Services\Interfaces\Services\" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
+    </Target>
+    <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

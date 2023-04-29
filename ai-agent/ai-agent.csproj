@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{57F46181-A0A2-4C3B-B130-3B30923F3B95}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>AIAgent</RootNamespace>
+        <AssemblyName>ai_agent</AssemblyName>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>9</LangVersion>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+            <HintPath>..\libraries\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+          <HintPath>..\libraries\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\libraries\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="source\Agent.cs" />
+        <Compile Include="source\Components\AgentAction.cs" />
+        <Compile Include="source\Components\AgentMemory.cs" />
+        <Compile Include="source\Components\AgentPlanner.cs" />
+        <Compile Include="source\Components\World.cs" />
+        <Compile Include="source\Components\WorldObject.cs" />
+        <Compile Include="source\Language\EnglishAgent.cs" />
+        <Compile Include="source\Language\IAgentLanguage.cs" />
+        <Compile Include="source\Language\SpanishAgent.cs" />
+        <Compile Include="source\Components\AgentPlanningNode.cs" />
+        <Compile Include="source\Types\AgentWorldObjectMemory.cs" />
+        <Compile Include="source\Types\Data\AgentConstants.cs" />
+        <Compile Include="source\Types\Data\AgentEmotion.cs" />
+        <Compile Include="source\Types\Data\AgentExampleData.cs" />
+        <Compile Include="source\Types\Data\AgentGoal.cs" />
+        <Compile Include="source\Types\Data\AgentMemoryImportance.cs" />
+        <Compile Include="source\Types\Data\AgentMessageFormat.cs" />
+        <Compile Include="source\Types\Data\AgentResponse.cs" />
+        <Compile Include="source\Types\Data\Functions\AgentFunctions.cs" />
+        <Compile Include="source\Types\Data\Prompts\AgentCleanHistoryChatRequestPrompt.cs" />
+        <Compile Include="source\Types\Data\Prompts\AgentFunctionRequestPrompt.cs" />
+        <Compile Include="source\Types\Data\Prompts\AgentObservationImportanceRequestPrompt.cs" />
+        <Compile Include="source\Types\Data\Prompts\AgentPlanningRequestPrompt.cs" />
+        <Compile Include="source\Types\Data\Prompts\AgentReflectionThoughtsRequestPrompt.cs" />
+        <Compile Include="source\Types\Data\State.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ai-core\ai-core.csproj">
+        <Project>{b65f84dd-ef3c-4fde-a8b3-44eaa40d373a}</Project>
+        <Name>ai-core</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

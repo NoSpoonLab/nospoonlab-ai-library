@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{6B841583-58DB-475D-940C-F8DF866FE330}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Tests</RootNamespace>
+        <AssemblyName>tests</AssemblyName>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>9</LangVersion>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+            <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Net.Http" />
+        <Reference Include="Unity.Sentis">
+            <HintPath>..\libraries\Unity.Sentis.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+            <HintPath>..\libraries\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+            <HintPath>..\libraries\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\libraries\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="source\AgentTest\Data\SentenceEvaluateResultTestData.cs" />
+        <Compile Include="source\AgentTest\Data\SentenceEvaluateTestData.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="source\AgentTest\Language\EnglishAgentUnitTest.cs" />
+        <Compile Include="source\AgentTest\TestBase.cs" />
+        <Compile Include="source\NoSpoonAITest\Data\Request\FunctionTransformerPromptRequest.cs" />
+        <Compile Include="source\NoSpoonAITest\Data\Request\JSONSchemeTransformerPromptRequest.cs" />
+        <Compile Include="source\NoSpoonAITest\Data\Request\JSONTransformerPromptRequest.cs" />
+        <Compile Include="source\NoSpoonAITest\Data\Request\SimpleTransformerPromptRequest.cs" />
+        <Compile Include="source\NoSpoonAITest\Data\Response\JSONTransformerResult.cs" />
+        <Compile Include="source\NoSpoonAITest\NoSpoonAITest.cs" />
+        <Compile Include="source\ServicesTest\CloudServiceTest.cs" />
+        <Compile Include="source\ServicesTest\GoogleAITest.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ai-agent\ai-agent.csproj">
+        <Project>{57f46181-a0a2-4c3b-b130-3b30923f3b95}</Project>
+        <Name>ai-agent</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\ai-core\ai-core.csproj">
+        <Project>{b65f84dd-ef3c-4fde-a8b3-44eaa40d373a}</Project>
+        <Name>ai-core</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="source\AgentTest\Data\Request\" />
+      <Folder Include="source\AgentTest\Data\Response\" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

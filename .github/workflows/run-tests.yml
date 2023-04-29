@@ -1,0 +1,45 @@
+﻿name: .NET Framework CI
+
+on:
+  push:
+    branches: [ '*' ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Dotnet Setup
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.x
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Build Solution Debug
+        run: |
+          msbuild.exe nospoonlab-ai-library.sln /nologo /nr:false /p:platform="Any CPU" /p:configuration="Debug"
+          
+      - name: Setup NUnit Console
+        run: |
+          nuget install NUnit.ConsoleRunner -Version 3.12.0 -OutputDirectory testrunner
+          
+      - name: Run Unit Tests
+        run: |
+          ./testrunner/NUnit.ConsoleRunner.3.12.0/tools/nunit3-console.exe "./tests/bin/Debug/tests.dll"
+
+      - name: Generate Documentation
+        run: |
+          dotnet tool update -g docfx
+          docfx docfx_project/docfx.json
+          
+      - name: Deploy Documentation
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/
