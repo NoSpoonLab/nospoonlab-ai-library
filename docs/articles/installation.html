@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Installation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Installation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/installation.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="installation">Installation</h1>
+
+<p>To install the NoSpoonLab AI Library, you need to download the latest release from the <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/releases">releases</a> page.</p>
+<p>The release contains the following files:</p>
+<ul>
+<li>ai-core.dll (the core library that contains the OpenAI client and the NoSpoonAIClient framework).</li>
+<li>ai-agent.dll (the library that contains the agent/character implementation).</li>
+<li>dependency-injection-core.dll (the library that contains the dependency injection service implementation).</li>
+<li>framework-core.dll (the library that contains the MVC pattern implementation).</li>
+</ul>
+<p>Extra libraries that are required to run the NoSpoonLab AI Library:</p>
+<ul>
+<li>Microsoft.Bcl.AsyncInterfaces.dll</li>
+<li>Newtonsoft.Json.dll</li>
+<li>System.Text.Json.dll</li>
+<li>System.Text.Encodings.Web.dll</li>
+<li>RestSharp.dll</li>
+<li>System.Runtime.CompilerServices.Unsafe.dll</li>
+</ul>
+<p>After downloading the release, you need to add the required libraries to your project.</p>
+<h2 id="adding-the-required-libraries-to-your-project-with-visual-studio">Adding the required libraries to your project with Visual Studio</h2>
+<p>To add the required libraries to your project, you need to follow the steps below:</p>
+<ol>
+<li>Open your project in Visual Studio.</li>
+<li>Right-click on the References folder in the Solution Explorer.</li>
+<li>Click on Add Reference.</li>
+<li>Click on Browse.</li>
+<li>Navigate to the folder where you downloaded the release.</li>
+<li>Select the required libraries.</li>
+<li>Click on Add.</li>
+<li>Click on OK.</li>
+<li>Build your project.</li>
+<li>Run your project.</li>
+<li>Enjoy!</li>
+</ol>
+<h2 id="adding-the-required-libraries-to-your-project-with-rider">Adding the required libraries to your project with Rider</h2>
+<p>To add the required libraries to your project, you need to follow the steps below:</p>
+<ol>
+<li>Open your project in Rider.</li>
+<li>Right-click on the References folder in the Solution Explorer.</li>
+<li>Click on Add Reference.</li>
+<li>Click on Browse.</li>
+<li>Navigate to the folder where you downloaded the release.</li>
+<li>Select the required libraries.</li>
+<li>Click on Add.</li>
+<li>Click on OK.</li>
+<li>Build your project.</li>
+<li>Run your project.</li>
+<li>Enjoy!</li>
+</ol>
+<h2 id="adding-the-required-libraries-to-your-unity-project">Adding the required libraries to your Unity project</h2>
+<p>To add the required libraries to your Unity project, you need to follow the steps below:</p>
+<ol>
+<li>Open your project in Unity.</li>
+<li>Navigate to the folder where you downloaded the release.</li>
+<li>Select the required libraries.</li>
+<li>Drag and drop the selected libraries into the Assets folder in Unity.</li>
+<li>Build your project.</li>
+<li>Run your project.</li>
+<li>Enjoy!</li>
+</ol>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/installation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          No Spoon Tech Lab S.L -  Documentation and library is under the MIT license.<span> - Made with <a href="https://dotnet.github.io/docfx">docfx</a></span> <span>
+        </span></div>
+      </div>
+    </footer>
+  </body>
+</html>
