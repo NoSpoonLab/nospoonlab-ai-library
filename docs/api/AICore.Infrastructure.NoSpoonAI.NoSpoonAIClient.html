@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NoSpoonAIClient
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NoSpoonAIClient
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient.md&amp;value=---%0Auid%3A%20AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient">
+
+
+
+  <h1 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient" class="text-break">
+    Class NoSpoonAIClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AICore.html">AICore</a>.<a class="xref" href="AICore.Infrastructure.html">Infrastructure</a>.<a class="xref" href="AICore.Infrastructure.NoSpoonAI.html">NoSpoonAI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ai_core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class is a wrapper for IAIGPTService calls. It is a framework that allows interaction with IAIGPTService calls
+with the added benefit that we can build prompt objects. This allows us a high level of customization in handling prompts.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NoSpoonAIClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NoSpoonAIClient</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient__ctor_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.#ctor*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient__ctor" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.#ctor">
+  NoSpoonAIClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NoSpoonAIClient()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_Initialize_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.Initialize*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_Initialize" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.Initialize">
+  Initialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies if the instance of IAIGPTService is available, and if not already added to the service collection, adds it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_InitializeService_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.InitializeService*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_InitializeService__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.InitializeService``1(``0)">
+  InitializeService&lt;TInterface&gt;(TInterface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new service to the service collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeService&lt;TInterface&gt;(TInterface service) where TInterface : IService</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>service</code> <span class="xref">TInterface</span></dt>
+    <dd><p>Instance of the service to be added.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TInterface</code></dt>
+    <dd><p>Interface type of the service to be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendEmbeddingRequest_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendEmbeddingRequest*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendEmbeddingRequest__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendEmbeddingRequest``1(``0)">
+  SendEmbeddingRequest&lt;TRequestType&gt;(TRequestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously sends an embedding request to the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AIEmbeddingResponse&gt; SendEmbeddingRequest&lt;TRequestType&gt;(TRequestType value) where TRequestType : NoSpoonAIEmbeddingRequest</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TRequestType</span></dt>
+    <dd><p>The NoSpoonAIEmbeddingRequest carrying the required data for the embedding request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AIEmbeddingResponse.html">AIEmbeddingResponse</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The result of the task contains an AIEmbeddingResponse with the response details.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequestType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest``1(``0)">
+  SendTransformerRequest&lt;TRequestType&gt;(TRequestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously sends a transformer request and returns a string representation of the result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; SendTransformerRequest&lt;TRequestType&gt;(TRequestType value) where TRequestType : NoSpoonAITransformerPromptRequest</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TRequestType</span></dt>
+    <dd><p>The NoSpoonAITransformerPromptRequest carrying the required data for the generative pre-trained transformer request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The result of the task is the string representation of the response from the generative pre-trained transformer request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequestType</code></dt>
+    <dd><p>Type of the request to be sent to the generative pre-trained transformer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest*"></a>
+
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest__2___1_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest``2(``1)">
+  SendTransformerRequest&lt;TResponseType, TRequestType&gt;(TRequestType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously sends a transformer request and returns an instance of the specified response type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TResponseType&gt; SendTransformerRequest&lt;TResponseType, TRequestType&gt;(TRequestType value) where TResponseType : class where TRequestType : NoSpoonAITransformerPromptRequest</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">TRequestType</span></dt>
+    <dd><p>The NoSpoonAITransformerPromptRequest carrying the required data for the generative pre-trained transformer request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponseType&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The result of the task contains the expected response from the generative pre-trained transformer request.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResponseType</code></dt>
+    <dd><p>The response type to be returned upon the execution of the generative pre-trained transformer request.</p>
+</dd>
+    <dt><code>TRequestType</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          No Spoon Tech Lab S.L -  Documentation and library is under the MIT license.<span> - Made with <a href="https://dotnet.github.io/docfx">docfx</a></span> <span>
+        </span></div>
+      </div>
+    </footer>
+  </body>
+</html>
