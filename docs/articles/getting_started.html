@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/getting_started.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>NoSpoonLab AI Library is a C# solution that integrates five sub-solutions, each providing a specific utility. The primary objective here is to simplify the developmental process for applications that interact with artificial intelligence, thereby allowing developers to focus on innovating rather than troubleshooting. Whether you are looking to build a revolutionary AI-integrated system or fine-tuning your current projects, our library offers unmatched utility rooted in professionalism and technical precision.</p>
+<p>After the installation of the library you will be able to use the NoSpoonLab AI Library in your projects.
+The library is designed to be used in any C# project, including Unity projects.
+The library is compatible with .NET Framework 4.6.1 and .NET Standard 2.0.</p>
+<p>Let's get started!</p>
+<h2 id="create-a-prompt-object-request">Create a prompt object request</h2>
+<p>First lets create a prompt object request to do that you must to inherit from <code>NoSpoonAITransformerPromptRequest </code> class and override the <code>OnBeginInitialize</code> method.</p>
+<pre><code class="lang-csharp">public class BasicPrompt : NoSpoonAITransformerPromptRequest 
+{
+    public override void OnBeginInitialize() {}
+}
+</code></pre>
+<p>Now lets create a constructor that receives the user prompt and system prompt using the base constructor.</p>
+<pre><code class="lang-csharp">public class BasicPrompt : NoSpoonAITransformerPromptRequest 
+{
+    #region Constructor
+
+    // Add a constructor that receives user prompt and system prompts
+    public BasicPrompt(string userPrompt, string systemPrompt) : base(userPrompt, systemPrompt) {}
+
+    #endregion
+    
+    public override void OnBeginInitialize() {}
+}
+</code></pre>
+<p>Full example of a use case of the prompt object request</p>
+<pre><code class="lang-csharp">public class AIExample : MonoBehaviour
+{
+    public async void Awake()
+    {
+        //First load the IAGPTService
+        var openAIClient = new OpenAIClient();
+        
+        //Set the settings for the OpenAI Service
+        openAIClient.SetSettings(new AIServiceInitData
+        {
+            APIKey = &quot;Your OpenAI API Key&quot;,
+            Model = AIModel.gpt_35_16k, //Default model we want to use in case we don't specify one in the prompt object request
+            Type = AIServiceType.OpenAI
+        });
+        
+        //Then load the NoSpoonAIClient
+        var noSpoonAIClient = new NoSpoonAIClient();
+        noSpoonAIClient.InitializeService&lt;IAIGPTService&gt;(openAIClient);
+        
+        //Create the prompt object request 
+        var promptRequest = new BasicPrompt(&quot;What's on the menu for today and how much does it cost? &quot;,
+            &quot;Your task is to report the prices of the menu. &quot; +
+             &quot;- Coffee $1.10 &quot; +
+             &quot;- Breakfast $3.50 &quot; +
+             &quot;- Dinner $7.55&quot;);
+        
+        //Send the request and wait for the response
+        var response = await noSpoonAIClient.SendTransformerRequest(promptRequest);
+        
+        //Log the response
+        Debug.Log(&quot;AI response: &quot; + response);
+    }
+}
+
+And that's it! You have successfully created a prompt object request and sent it to the AI service.
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/getting_started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          No Spoon Tech Lab S.L -  Documentation and library is under the MIT license.<span> - Made with <a href="https://dotnet.github.io/docfx">docfx</a></span> <span>
+        </span></div>
+      </div>
+    </footer>
+  </body>
+</html>

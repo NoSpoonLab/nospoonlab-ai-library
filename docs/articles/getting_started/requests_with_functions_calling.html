@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Requests with Functions Calling </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Requests with Functions Calling ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/getting_started/requests_with_functions_calling.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h2 id="requests-with-functions-calling">Requests with Functions Calling</h2>
+
+<p>In the case of the OpenAI service, it implements 2 models that allow calling functions directly.</p>
+<p>The models are:</p>
+<ul>
+<li>GPT-3.5</li>
+<li>GPT-4</li>
+</ul>
+<p>In other words, you can have your prompt object request that, in addition to the system prompt and the user prompt, has added functions which the message-based model can make the decision to call a function or send a message.</p>
+<p>Let's simulate for a moment a prompt with functions:</p>
+<p>System Prompt: You are an assistant and your function is to talk with a potential client. If the client indicates that he is interested in buying, you must pass the conversation on to a human agent and if the query is to find out more details about the product, you will send an email with product details.</p>
+<p>Function Mode: Auto</p>
+<p>Features:</p>
+<ul>
+<li>transfer_conversation_to_human_agent(userName)</li>
+<li>send_email_with_product_details(userEmail, productId)</li>
+</ul>
+<p>User Prompt: (Depending on what the user sends here, one of the functions will be called or it will be answered with a message)</p>
+<p>Let's go to a use case that you can find in the test project:</p>
+<h3 id="function-modes">Function modes</h3>
+<p>Setup the function mode we have 3 options:</p>
+<ul>
+<li>default (Model will no call any function will send only messages)</li>
+<li>auto (Model will call the functions when the model decides to do so, but can also only send a message)</li>
+<li>force (Model will call always one function)</li>
+</ul>
+<p>default:</p>
+<pre><code class="lang-string">default is set by default, so you don't need to do anything.
+</code></pre>
+<p>Auto:</p>
+<pre><code class="lang-csharp">public override void OnBeginInitialize()
+    {
+        FunctionMode(&quot;auto&quot;);
+    }
+</code></pre>
+<p>Force:</p>
+<pre><code class="lang-csharp">public override void OnBeginInitialize()
+    {
+        FunctionMode(new FunctionDetail{ name = &quot;call_to_my_function&quot;});
+    }
+</code></pre>
+<h3 id="creating-a-function">Creating a function</h3>
+<p>The function object already exists, but what does not exist are the properties that we will have to create for each of our functions.</p>
+<p>These properties are the arguments that our function will receive.</p>
+<ul>
+<li>Object <a class="xref" href="../../api/AICore.Services.Types.Request.Function.html">Function</a></li>
+<li>Object <a class="xref" href="../../api/AICore.Services.Types.Request.FunctionParameter.html">FunctionParameter</a></li>
+</ul>
+<p>We need to create our properties, let's say we have two properties, one is the user's email and the other is the product id:</p>
+<pre><code class="lang-csharp">public class EmailProperty
+    {
+        public string type{ get; set; }
+        public string description{ get; set; }
+    }
+
+public class ProductIdProperty
+    {
+        public string type{ get; set; }
+        public string description{ get; set; }
+    
+        [JsonProperty(&quot;enum&quot;)]
+        public List&lt;string&gt; enumerator { get; set; }
+    }
+</code></pre>
+<p>Now we need to create an object that will contain all our properties:</p>
+<pre><code class="lang-csharp">public class SendEmailProperties
+    {
+        public EmailProperty email{ get; set; }
+        public ProductIdProperty productId{ get; set; }
+    }
+</code></pre>
+<p>Now we have to create the function object and define its name, its type and also define its properties:</p>
+<pre><code class="lang-csharp">    new Function
+    {
+        name = &quot;send_email_with_product_details&quot;,
+        description = &quot;Send an email to the user with the details of the product that is currently being discussed in this conversation.&quot;,
+        parameters = new FunctionParameter
+        {
+            type = &quot;object&quot;,
+            required = new List&lt;string&gt; { &quot;email&quot;,&quot;productId&quot; }, //This is the name of the property that must be included in the model response
+            properties = new SendEmailProperties
+            {
+                email = new EmailProperty
+                {
+                    type = &quot;string&quot;,
+                    description = &quot;User email extracted from the user message&quot;
+                },
+                productId = new ProductIdProperty{
+                    type = &quot;integer&quot;,
+                    description = &quot;Product id extracted from the user message&quot;,
+                    enumerator = new List&lt;string&gt;
+                    {
+                        &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;,&quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;
+                    }
+                }
+            }
+        }
+    };
+</code></pre>
+<h3 id="response-object">Response object</h3>
+<p>To get a response we can either receive the string directly without parsing or parse it before it reaches us.</p>
+<p>What should a response object contain?</p>
+<p>The arguments in string format, for example:</p>
+<pre><code class="lang-csharp"> public class SendEmailResponse
+    {
+        public string email;
+        public int productId;
+    }
+</code></pre>
+<h3 id="the-full-code-example">The full code example</h3>
+<pre><code class="lang-csharp">
+using System.Collections.Generic;
+using AICore.Infrastructure.NoSpoonAI.Types.Request;
+using AICore.Services.Types.Request;
+using Newtonsoft.Json;
+
+public class FunctionPrompt : NoSpoonAITransformerPromptRequest
+{
+    public FunctionPrompt(string userPrompt) : base(userPrompt)
+    {
+    }
+
+    public override void OnBeginInitialize()
+    {
+        FunctionMode(new FunctionDetail { name = &quot;&quot; });
+        Functions(new List&lt;Function&gt;
+        {
+            new Function
+            {
+            name = &quot;send_email_with_product_details&quot;,
+            description = &quot;Send an email to the user with the details of the product that is currently being discussed in this conversation.&quot;,
+            parameters = new FunctionParameter
+            {
+                type = &quot;object&quot;,
+                required = new List&lt;string&gt; { &quot;email&quot;,&quot;productId&quot; },//This is the name of the property that must be included in the model response
+                properties = new SendEmailProperties
+                {
+                    email = new EmailProperty
+                    {
+                        type = &quot;string&quot;,
+                        description = &quot;User email extracted from the user message&quot;
+                    },
+                    productId = new ProductIdProperty{
+                        type = &quot;integer&quot;,
+                        description = &quot;Product id extracted from the user message&quot;,
+                        enumerator = new List&lt;string&gt;
+                        {
+                            &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;,&quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;
+                        }
+                    }
+                }
+            }
+        }
+        });
+    }
+    
+    public class SendEmailProperties
+    {
+        public EmailProperty email{ get; set; }
+        public ProductIdProperty productId{ get; set; }
+    }
+    
+    public class EmailProperty
+    {
+        public string type{ get; set; }
+        public string description{ get; set; }
+    }
+
+    public class ProductIdProperty
+    {
+        public string type{ get; set; }
+        public string description{ get; set; }
+    
+        [JsonProperty(&quot;enum&quot;)]
+        public List&lt;string&gt; enumerator { get; set; }
+    }
+}
+
+</code></pre>
+<h3 id="how-to-send-a-function-request">How to send a function request</h3>
+<p>If we want the response to be of the SendEmailResponse type, we would do it this way:</p>
+<pre><code class="lang-csharp">var promptRequest = new FunctionPrompt(&quot;I want to buy product 3&quot;);
+var response = await _noSpoonAIClient.SendTransformerRequest&lt;SendEmailResponse, FunctionPrompt&gt;(promptRequest);
+</code></pre>
+<p>If we want the response to be in raw format as a string of this:</p>
+<pre><code class="lang-csharp">var promptRequest = new FunctionPrompt(&quot;I want to buy product 3&quot;);
+var response = await _noSpoonAIClient.SendTransformerRequest(promptRequest);
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/docfx_project/articles/getting_started/requests_with_functions_calling.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          No Spoon Tech Lab S.L -  Documentation and library is under the MIT license.<span> - Made with <a href="https://dotnet.github.io/docfx">docfx</a></span> <span>
+        </span></div>
+      </div>
+    </footer>
+  </body>
+</html>
