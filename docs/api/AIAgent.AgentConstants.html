@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AIAgent_AgentConstants.md&amp;value=---%0Auid%3A%20AIAgent.AgentConstants%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=AIAgent_AgentConstants.md&amp;value=---%0Auid%3A%20AIAgent.AgentConstants%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="AIAgent_AgentConstants" data-uid="AIAgent.AgentConstants" class="text-break">
     Class AgentConstants
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -145,7 +145,7 @@
 
   <h3 id="AIAgent_AgentConstants_MAX_MEMORIES_RETRIEVAL" data-uid="AIAgent.AgentConstants.MAX_MEMORIES_RETRIEVAL">
   MAX_MEMORIES_RETRIEVAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The maximum number of past interactions that the AI agent can retrieve from its memory. Default value is 20.</p>
@@ -153,7 +153,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MAX_MEMORIES_RETRIEVAL = 20</code></pre>
+    <pre><code class="lang-csharp hljs">public const int MAX_MEMORIES_RETRIEVAL = 60</code></pre>
   </div>
 
 
@@ -176,15 +176,15 @@
 
   <h3 id="AIAgent_AgentConstants_MAX_TOKENS_ON_COMPLETION" data-uid="AIAgent.AgentConstants.MAX_TOKENS_ON_COMPLETION">
   MAX_TOKENS_ON_COMPLETION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The maximum number of tokens that AI agent can output in a single completion. Default value is 768.</p>
+  <div class="markdown level1 summary"><p>The maximum number of tokens that AI agent can output in a single completion. Default value is NORMAL_TOKENS_ON_COMPLETION x2.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MAX_TOKENS_ON_COMPLETION = 768</code></pre>
+    <pre><code class="lang-csharp hljs">public const int MAX_TOKENS_ON_COMPLETION = 1536</code></pre>
   </div>
 
 
@@ -207,7 +207,7 @@
 
   <h3 id="AIAgent_AgentConstants_MAX_TOKENS_ON_REQUEST" data-uid="AIAgent.AgentConstants.MAX_TOKENS_ON_REQUEST">
   MAX_TOKENS_ON_REQUEST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The maximum number of tokens that AI agent can process in a single request. Default value is 4086.</p>
@@ -215,7 +215,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MAX_TOKENS_ON_REQUEST = 4086</code></pre>
+    <pre><code class="lang-csharp hljs">public const int MAX_TOKENS_ON_REQUEST = 40960</code></pre>
   </div>
 
 
@@ -238,7 +238,7 @@
 
   <h3 id="AIAgent_AgentConstants_MIN_MESSAGE_ON_CLEAN" data-uid="AIAgent.AgentConstants.MIN_MESSAGE_ON_CLEAN">
   MIN_MESSAGE_ON_CLEAN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The minimum number of messages that the AI agent retains during conversation cleanup. Default value is 8.</p>
@@ -246,7 +246,38 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MIN_MESSAGE_ON_CLEAN = 8</code></pre>
+    <pre><code class="lang-csharp hljs">public const int MIN_MESSAGE_ON_CLEAN = 30</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="AIAgent_AgentConstants_NORMAL_TOKENS_ON_COMPLETION" data-uid="AIAgent.AgentConstants.NORMAL_TOKENS_ON_COMPLETION">
+  NORMAL_TOKENS_ON_COMPLETION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The normal number of tokens that AI agent can output in a single completion. Default value is 768.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NORMAL_TOKENS_ON_COMPLETION = 768</code></pre>
   </div>
 
 
@@ -270,7 +301,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentConstants.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Types/Data/AgentConstants.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
         

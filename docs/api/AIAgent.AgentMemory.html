@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AIAgent_AgentMemory.md&amp;value=---%0Auid%3A%20AIAgent.AgentMemory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=AIAgent_AgentMemory.md&amp;value=---%0Auid%3A%20AIAgent.AgentMemory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="AIAgent_AgentMemory" data-uid="AIAgent.AgentMemory" class="text-break">
     Class AgentMemory
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -148,7 +148,7 @@ As a memory we can have events, observation, conversation, thoughts or any other
 
   <h3 id="AIAgent_AgentMemory_Data" data-uid="AIAgent.AgentMemory.Data">
   Data
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Data stored in the memory.
@@ -180,7 +180,7 @@ Events, observation, conversation, thoughts or any other data that the AI agent 
 
   <h3 id="AIAgent_AgentMemory_Embedding" data-uid="AIAgent.AgentMemory.Embedding">
   Embedding
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>An array representing the data's location in a multi-dimensional space.</p>
@@ -211,7 +211,7 @@ Events, observation, conversation, thoughts or any other data that the AI agent 
 
   <h3 id="AIAgent_AgentMemory_Id" data-uid="AIAgent.AgentMemory.Id">
   Id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unique identifier for a specific part of memory.</p>
@@ -242,7 +242,7 @@ Events, observation, conversation, thoughts or any other data that the AI agent 
 
   <h3 id="AIAgent_AgentMemory_Importance" data-uid="AIAgent.AgentMemory.Importance">
   Importance
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Measure of the importance of the data in memory.
@@ -274,7 +274,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_ImportanceScore" data-uid="AIAgent.AgentMemory.ImportanceScore">
   ImportanceScore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Normalized measure of the importance of the data.</p>
@@ -303,9 +303,39 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
 
 
+  <h3 id="AIAgent_AgentMemory_KeywordEmbeddingsScore" data-uid="AIAgent.AgentMemory.KeywordEmbeddingsScore">
+  KeywordEmbeddingsScore
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float KeywordEmbeddingsScore</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="AIAgent_AgentMemory_LastVisitedDate" data-uid="AIAgent.AgentMemory.LastVisitedDate">
   LastVisitedDate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Date/time when the stored data was last accessed.</p>
@@ -336,7 +366,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_RecencyScore" data-uid="AIAgent.AgentMemory.RecencyScore">
   RecencyScore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Measure of how recent the data has been used or visited.</p>
@@ -367,7 +397,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_RelevanceScore" data-uid="AIAgent.AgentMemory.RelevanceScore">
   RelevanceScore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Measure of the relevance of the data to other current observations.</p>
@@ -398,7 +428,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_TotalScore" data-uid="AIAgent.AgentMemory.TotalScore">
   TotalScore
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Cumulative total score representing a measure of the overall utility of the stored data based on its recency, importance and relevance scores.</p>
@@ -426,6 +456,36 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
 
 
+
+  <h3 id="AIAgent_AgentMemory_keywordEmbeddings" data-uid="AIAgent.AgentMemory.keywordEmbeddings">
+  keywordEmbeddings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, float[]&gt; keywordEmbeddings</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -434,7 +494,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_TokenCount" data-uid="AIAgent.AgentMemory.TokenCount">
   TokenCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Token count will return the number of tokens in the data property string using a tokenizer utility.</p>
@@ -470,7 +530,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 
   <h3 id="AIAgent_AgentMemory_CalculateTotalScore_System_Single___" data-uid="AIAgent.AgentMemory.CalculateTotalScore(System.Single[])">
   CalculateTotalScore(float[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculates and returns the total score for stored data, summing up its recency, importance, and relevance scores.</p>
@@ -509,7 +569,7 @@ Calculated based on the importance of sentence, the recency of the memory and la
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/AgentMemory.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Components/AgentMemory.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
         

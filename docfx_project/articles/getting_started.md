@@ -23,7 +23,7 @@ public class BasicPrompt : NoSpoonAITransformerPromptRequest
 }
 ```
 
-Now lets create a constructor that receives the user prompt and system prompt using the base constructor.
+Now let's create a constructor that receives the user prompt and system prompt using the base constructor.
 
 ```csharp
 public class BasicPrompt : NoSpoonAITransformerPromptRequest 

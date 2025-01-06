@@ -5,16 +5,11 @@ The release contains the following files:
 
 - ai-core.dll (the core library that contains the OpenAI client and the NoSpoonAIClient framework).
 - ai-agent.dll (the library that contains the agent/character implementation).
-- dependency-injection-core.dll (the library that contains the dependency injection service implementation).
 - framework-core.dll (the library that contains the MVC pattern implementation).
 
 Extra libraries that are required to run the NoSpoonLab AI Library:
-- Microsoft.Bcl.AsyncInterfaces.dll
 - Newtonsoft.Json.dll
-- System.Text.Json.dll
-- System.Text.Encodings.Web.dll
-- RestSharp.dll
-- System.Runtime.CompilerServices.Unsafe.dll
+- Newtonsoft.Json.Schema.dll
 
 After downloading the release, you need to add the required libraries to your project.
 

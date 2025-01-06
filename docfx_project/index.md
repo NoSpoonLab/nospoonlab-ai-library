@@ -9,11 +9,9 @@ The NoSpoonLab AI Library mainly encapsulates four downloadable dynamic-link lib
 
 2. AI-Agent is a library that oversees the creation and operations of an agent or character. This unique element allows the agent to have conversations, express different emotional states, possess memories, and reflect on past conversations or events. It is essentially a representation of an agent's brain, making it a perfect fit for deployment as a chatbot or an intelligent non-playable character (NPC) in a video game.
 
-3. Dependency-Injection-Core demonstrates a basic implementation of dependency injection service, reinforcing flexibility in the system's design and enhancing testability.
+3. Framework-Core leverages C# reflection to offer an MVC pattern implementation, making it ideal for Unity-oriented development.
 
-4. Framework-Core leverages C# reflection to offer an MVC pattern implementation, making it ideal for Unity-oriented development.
-
-5. The test project is an integral part of this library, allowing users to put the AI-Core and AI-Agent implementations to rigorous tests, thus ensuring their robustness in real-world applications.
+4. The test project is an integral part of this library, allowing users to put the AI-Core and AI-Agent implementations to rigorous tests, thus ensuring their robustness in real-world applications.
 
 In a nutshell, NoSpoonLab's AI Library offers a professionally tailored C# solution that integrates five sub-solutions, each providing a specific utility. The primary objective here is to simplify the developmental process for applications that interact with artificial intelligence, thereby allowing developers to focus on innovating rather than troubleshooting. Whether you are looking to build a revolutionary AI-integrated system or fine-tuning your current projects, our library offers unmatched utility rooted in professionalism and technical precision.
 

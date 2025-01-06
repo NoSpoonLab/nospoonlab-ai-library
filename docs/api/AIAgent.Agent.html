@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AIAgent_Agent.md&amp;value=---%0Auid%3A%20AIAgent.Agent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=AIAgent_Agent.md&amp;value=---%0Auid%3A%20AIAgent.Agent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="AIAgent_Agent" data-uid="AIAgent.Agent" class="text-break">
     Class Agent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -92,7 +92,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Agent : Injectable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Agent</code></pre>
   </div>
 
 
@@ -102,7 +102,6 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="DependencyInjectionCore.Injectable.html">Injectable</a></div>
       <div><span class="xref">Agent</span></div>
     </dd>
   </dl>
@@ -112,9 +111,6 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="DependencyInjectionCore.Injectable.html#DependencyInjectionCore_Injectable_ForceInject">Injectable.ForceInject()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
@@ -151,7 +147,7 @@
 
   <h3 id="AIAgent_Agent__ctor" data-uid="AIAgent.Agent.#ctor">
   Agent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the Agent class.</p>
@@ -174,6 +170,37 @@
 
 
 
+  <a id="AIAgent_Agent__ctor_" data-uid="AIAgent.Agent.#ctor*"></a>
+
+  <h3 id="AIAgent_Agent__ctor_UnityEngine_GameObject_" data-uid="AIAgent.Agent.#ctor(UnityEngine.GameObject)">
+  Agent(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent(GameObject agentInstance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>agentInstance</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -182,7 +209,7 @@
 
   <h3 id="AIAgent_Agent_AddMemory_System_String_" data-uid="AIAgent.Agent.AddMemory(System.String)">
   AddMemory(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add a new memory to the agent.</p>
@@ -218,9 +245,49 @@
 
   <a id="AIAgent_Agent_AddMemory_" data-uid="AIAgent.Agent.AddMemory*"></a>
 
+  <h3 id="AIAgent_Agent_AddMemory_System_String_System_Int32_System_Single_" data-uid="AIAgent.Agent.AddMemory(System.String,System.Int32,System.Single)">
+  AddMemory(string, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddMemory(string observation, int id, float score)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>observation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AIAgent_Agent_AddMemory_" data-uid="AIAgent.Agent.AddMemory*"></a>
+
   <h3 id="AIAgent_Agent_AddMemory_System_String_System_Single_" data-uid="AIAgent.Agent.AddMemory(System.String,System.Single)">
   AddMemory(string, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a new memory to the agent with a specific importance score.</p>
@@ -261,7 +328,7 @@
 
   <h3 id="AIAgent_Agent_ClearAgentMemories" data-uid="AIAgent.Agent.ClearAgentMemories">
   ClearAgentMemories()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears the agent's memory.</p>
@@ -288,7 +355,7 @@
 
   <h3 id="AIAgent_Agent_ClearConversationMessages" data-uid="AIAgent.Agent.ClearConversationMessages">
   ClearConversationMessages()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears the agent's recorded conversation messages.</p>
@@ -311,11 +378,63 @@
 
 
 
+  <a id="AIAgent_Agent_ClearLastMessage_" data-uid="AIAgent.Agent.ClearLastMessage*"></a>
+
+  <h3 id="AIAgent_Agent_ClearLastMessage" data-uid="AIAgent.Agent.ClearLastMessage">
+  ClearLastMessage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearLastMessage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AIAgent_Agent_CreateAgentPlan_" data-uid="AIAgent.Agent.CreateAgentPlan*"></a>
+
+  <h3 id="AIAgent_Agent_CreateAgentPlan" data-uid="AIAgent.Agent.CreateAgentPlan">
+  CreateAgentPlan()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateAgentPlan()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="AIAgent_Agent_GetAgentName_" data-uid="AIAgent.Agent.GetAgentName*"></a>
 
   <h3 id="AIAgent_Agent_GetAgentName" data-uid="AIAgent.Agent.GetAgentName">
   GetAgentName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L524"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the name of the agent.</p>
@@ -344,11 +463,11 @@
 
 
 
-  <a id="AIAgent_Agent_GetObservationEmbedding_" data-uid="AIAgent.Agent.GetObservationEmbedding*"></a>
+  <a id="AIAgent_Agent_GetEmbedding_" data-uid="AIAgent.Agent.GetEmbedding*"></a>
 
-  <h3 id="AIAgent_Agent_GetObservationEmbedding_System_String_" data-uid="AIAgent.Agent.GetObservationEmbedding(System.String)">
-  GetObservationEmbedding(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <h3 id="AIAgent_Agent_GetEmbedding_System_String_" data-uid="AIAgent.Agent.GetEmbedding(System.String)">
+  GetEmbedding(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L531"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts an observation into an embedding array.</p>
@@ -356,7 +475,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;float[]&gt; GetObservationEmbedding(string observation)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;float[]&gt; GetEmbedding(string observation)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -383,11 +502,73 @@
 
 
 
+  <a id="AIAgent_Agent_GetLastContext_" data-uid="AIAgent.Agent.GetLastContext*"></a>
+
+  <h3 id="AIAgent_Agent_GetLastContext" data-uid="AIAgent.Agent.GetLastContext">
+  GetLastContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLastContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AIAgent_Agent_GetLastConversation_" data-uid="AIAgent.Agent.GetLastConversation*"></a>
+
+  <h3 id="AIAgent_Agent_GetLastConversation" data-uid="AIAgent.Agent.GetLastConversation">
+  GetLastConversation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLastConversation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="AIAgent_Agent_GetObservationImportance_" data-uid="AIAgent.Agent.GetObservationImportance*"></a>
 
   <h3 id="AIAgent_Agent_GetObservationImportance_System_String_" data-uid="AIAgent.Agent.GetObservationImportance(System.String)">
   GetObservationImportance(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the importance of an observation.</p>
@@ -426,7 +607,7 @@
 
   <h3 id="AIAgent_Agent_GetReflectAgentThoughts" data-uid="AIAgent.Agent.GetReflectAgentThoughts">
   GetReflectAgentThoughts()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves thoughts of the agent in regard to its conversation messages.</p>
@@ -459,7 +640,7 @@
 
   <h3 id="AIAgent_Agent_IEnumeratorRequestAgentMessage_System_String_System_String_" data-uid="AIAgent.Agent.IEnumeratorRequestAgentMessage(System.String,System.String)">
   IEnumeratorRequestAgentMessage(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Processes a message from a client, interacting with the NLP API and the agent's memory.</p>
@@ -499,9 +680,9 @@
 
   <a id="AIAgent_Agent_Initialize_" data-uid="AIAgent.Agent.Initialize*"></a>
 
-  <h3 id="AIAgent_Agent_Initialize_System_String_System_String_" data-uid="AIAgent.Agent.Initialize(System.String,System.String)">
-  Initialize(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <h3 id="AIAgent_Agent_Initialize_System_String_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="AIAgent.Agent.Initialize(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Initialize(string, string, string, int, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes the agent instance with a name and a locale for the language.</p>
@@ -509,7 +690,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(string agentName, string locale)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(string agentName, string locale, string agentDescription, int agentVerbosity, int agentToxicity, int agentHumor, int agentCreativity, int agentHelpfulness)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -520,7 +701,45 @@
     <dt><code>locale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The locale represents the language the agent will use (currently supports &quot;en&quot; for English and &quot;es&quot; for Spanish).</p>
 </dd>
+    <dt><code>agentDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>agentVerbosity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>agentToxicity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>agentHumor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>agentCreativity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>agentHelpfulness</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AIAgent_Agent_LateUpdate_" data-uid="AIAgent.Agent.LateUpdate*"></a>
+
+  <h3 id="AIAgent_Agent_LateUpdate" data-uid="AIAgent.Agent.LateUpdate">
+  LateUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LateUpdate()</code></pre>
+  </div>
+
 
 
 
@@ -537,7 +756,7 @@
 
   <h3 id="AIAgent_Agent_MemoryRetrieval_System_Single___System_Int32_" data-uid="AIAgent.Agent.MemoryRetrieval(System.Single[],System.Int32)">
   MemoryRetrieval(float[], int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L436"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the most relevant memories based on a provided observation.</p>
@@ -545,7 +764,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;AgentMemory&gt; MemoryRetrieval(float[] observation, int memoryCount = 20)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;AgentMemory&gt; MemoryRetrieval(float[] observation, int memoryCount = 60)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -579,7 +798,7 @@
 
   <h3 id="AIAgent_Agent_ReflectAgentThoughts" data-uid="AIAgent.Agent.ReflectAgentThoughts">
   ReflectAgentThoughts()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L497"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reflects the agent's thoughts and adds them to its memory.</p>
@@ -607,11 +826,42 @@
 
 
 
+  <a id="AIAgent_Agent_RemoveMemory_" data-uid="AIAgent.Agent.RemoveMemory*"></a>
+
+  <h3 id="AIAgent_Agent_RemoveMemory_System_Int32_" data-uid="AIAgent.Agent.RemoveMemory(System.Int32)">
+  RemoveMemory(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMemory(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="AIAgent_Agent_RequestAgentMessage_" data-uid="AIAgent.Agent.RequestAgentMessage*"></a>
 
   <h3 id="AIAgent_Agent_RequestAgentMessage_System_String_System_String_" data-uid="AIAgent.Agent.RequestAgentMessage(System.String,System.String)">
   RequestAgentMessage(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Request an agent's response to a given message.</p>
@@ -653,7 +903,7 @@
 
   <h3 id="AIAgent_Agent_ResetAgent" data-uid="AIAgent.Agent.ResetAgent">
   ResetAgent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resets the agent's state, clearing all messages and memories and resetting the name.</p>
@@ -680,7 +930,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-agent/source/Agent.cs/#L23" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-agent/source/Agent.cs/#L26" class="edit-link">Edit this page</a>
         </div>
 
         

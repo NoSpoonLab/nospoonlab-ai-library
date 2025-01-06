@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient.md&amp;value=---%0Auid%3A%20AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient.md&amp;value=---%0Auid%3A%20AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient" class="text-break">
     Class NoSpoonAIClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -148,7 +148,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
   <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient__ctor" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.#ctor">
   NoSpoonAIClient()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -178,7 +178,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
   <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_Initialize" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.Initialize">
   Initialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Verifies if the instance of IAIGPTService is available, and if not already added to the service collection, adds it.</p>
@@ -201,11 +201,11 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
 
 
-  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_InitializeService_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.InitializeService*"></a>
+  <a id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_Initialize_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.Initialize*"></a>
 
-  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_InitializeService__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.InitializeService``1(``0)">
-  InitializeService&lt;TInterface&gt;(TInterface)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_Initialize_AICore_Services_Types_Data_AIServiceInitData_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.Initialize(AICore.Services.Types.Data.AIServiceInitData)">
+  Initialize(AIServiceInitData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a new service to the service collection.</p>
@@ -213,23 +213,17 @@ with the added benefit that we can build prompt objects. This allows us a high l
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitializeService&lt;TInterface&gt;(TInterface service) where TInterface : IService</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(AIServiceInitData service)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>service</code> <span class="xref">TInterface</span></dt>
+    <dt><code>service</code> <a class="xref" href="AICore.Services.Types.Data.AIServiceInitData.html">AIServiceInitData</a></dt>
     <dd><p>Instance of the service to be added.</p>
 </dd>
   </dl>
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TInterface</code></dt>
-    <dd><p>Interface type of the service to be added.</p>
-</dd>
-  </dl>
 
 
 
@@ -244,7 +238,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
   <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendEmbeddingRequest__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendEmbeddingRequest``1(``0)">
   SendEmbeddingRequest&lt;TRequestType&gt;(TRequestType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously sends an embedding request to the model.</p>
@@ -288,7 +282,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
   <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest__1___0_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest``1(``0)">
   SendTransformerRequest&lt;TRequestType&gt;(TRequestType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously sends a transformer request and returns a string representation of the result.</p>
@@ -333,7 +327,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 
   <h3 id="AICore_Infrastructure_NoSpoonAI_NoSpoonAIClient_SendTransformerRequest__2___1_" data-uid="AICore.Infrastructure.NoSpoonAI.NoSpoonAIClient.SendTransformerRequest``2(``1)">
   SendTransformerRequest&lt;TResponseType, TRequestType&gt;(TRequestType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously sends a transformer request and returns an instance of the specified response type.</p>
@@ -380,7 +374,7 @@ with the added benefit that we can build prompt objects. This allows us a high l
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/NoSpoonAI/NoSpoonAIClient.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
         

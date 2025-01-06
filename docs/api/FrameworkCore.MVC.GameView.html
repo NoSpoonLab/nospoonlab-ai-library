@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=FrameworkCore_MVC_GameView.md&amp;value=---%0Auid%3A%20FrameworkCore.MVC.GameView%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=FrameworkCore_MVC_GameView.md&amp;value=---%0Auid%3A%20FrameworkCore.MVC.GameView%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="FrameworkCore_MVC_GameView" data-uid="FrameworkCore.MVC.GameView" class="text-break">
     Class GameView
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/framework-core/source/MVC/GameView.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GameView : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class GameView : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IEventSystemHandler</code></pre>
   </div>
 
 
@@ -109,6 +109,15 @@
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IDragHandler</span></div>
+      <div><span class="xref">IEndDragHandler</span></div>
+      <div><span class="xref">IBeginDragHandler</span></div>
+      <div><span class="xref">IEventSystemHandler</span></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -217,7 +226,13 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
     </div>
     <div>
       <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
@@ -355,6 +370,12 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
       <span class="xref">Object.DontDestroyOnLoad(Object)</span>
     </div>
     <div>
@@ -373,7 +394,13 @@
       <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
     </div>
     <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
     </div>
     <div>
       <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
@@ -382,13 +409,37 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
     </div>
     <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
     </div>
     <div>
       <span class="xref">Object.ToString()</span>
@@ -426,7 +477,7 @@
 
   <h3 id="FrameworkCore_MVC_GameView_GetController__1" data-uid="FrameworkCore.MVC.GameView.GetController``1">
   GetController&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/framework-core/source/MVC/GameView.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -458,11 +509,47 @@
 
 
 
+  <a id="FrameworkCore_MVC_GameView_GetModel_" data-uid="FrameworkCore.MVC.GameView.GetModel*"></a>
+
+  <h3 id="FrameworkCore_MVC_GameView_GetModel__1" data-uid="FrameworkCore.MVC.GameView.GetModel``1">
+  GetModel&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetModel&lt;T&gt;() where T : GameModel</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="FrameworkCore_MVC_GameView_Initialize_" data-uid="FrameworkCore.MVC.GameView.Initialize*"></a>
 
   <h3 id="FrameworkCore_MVC_GameView_Initialize__1_System_Object___" data-uid="FrameworkCore.MVC.GameView.Initialize``1(System.Object[])">
   Initialize&lt;T&gt;(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/framework-core/source/MVC/GameView.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -494,11 +581,104 @@
 
 
 
+  <a id="FrameworkCore_MVC_GameView_OnBeginDrag_" data-uid="FrameworkCore.MVC.GameView.OnBeginDrag*"></a>
+
+  <h3 id="FrameworkCore_MVC_GameView_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="FrameworkCore.MVC.GameView.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnBeginDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeginDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FrameworkCore_MVC_GameView_OnDrag_" data-uid="FrameworkCore.MVC.GameView.OnDrag*"></a>
+
+  <h3 id="FrameworkCore_MVC_GameView_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="FrameworkCore.MVC.GameView.OnDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FrameworkCore_MVC_GameView_OnEndDrag_" data-uid="FrameworkCore.MVC.GameView.OnEndDrag*"></a>
+
+  <h3 id="FrameworkCore_MVC_GameView_OnEndDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="FrameworkCore.MVC.GameView.OnEndDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnEndDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEndDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="FrameworkCore_MVC_GameView_WakeUp_" data-uid="FrameworkCore.MVC.GameView.WakeUp*"></a>
 
   <h3 id="FrameworkCore_MVC_GameView_WakeUp" data-uid="FrameworkCore.MVC.GameView.WakeUp">
   WakeUp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/framework-core/source/MVC/GameView.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -524,7 +704,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/framework-core/source/MVC/GameView.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/framework-core/source/MVC/GameView.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
         

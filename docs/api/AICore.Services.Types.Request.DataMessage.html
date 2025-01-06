@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/JTests/apiSpec/new?filename=AICore_Services_Types_Request_DataMessage.md&amp;value=---%0Auid%3A%20AICore.Services.Types.Request.DataMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/NoSpoonLab/nospoonlab-ai-library/new/master/apiSpec/new?filename=AICore_Services_Types_Request_DataMessage.md&amp;value=---%0Auid%3A%20AICore.Services.Types.Request.DataMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -79,7 +79,7 @@
 
   <h1 id="AICore_Services_Types_Request_DataMessage" data-uid="AICore.Services.Types.Request.DataMessage" class="text-break">
     Class DataMessage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -147,7 +147,7 @@ public class DataMessage</code></pre>
 
   <h3 id="AICore_Services_Types_Request_DataMessage_content" data-uid="AICore.Services.Types.Request.DataMessage.content">
   content
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The content of the message.</p>
@@ -176,17 +176,16 @@ public class DataMessage</code></pre>
 
 
 
-  <h3 id="AICore_Services_Types_Request_DataMessage_function_call" data-uid="AICore.Services.Types.Request.DataMessage.function_call">
-  function_call
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <h3 id="AICore_Services_Types_Request_DataMessage_name" data-uid="AICore.Services.Types.Request.DataMessage.name">
+  name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The possible function call associated with this message.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FunctionCall function_call</code></pre>
+    <pre><code class="lang-csharp hljs">public string name</code></pre>
   </div>
 
 
@@ -194,7 +193,7 @@ public class DataMessage</code></pre>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="AICore.Services.Types.Request.FunctionCall.html">FunctionCall</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -209,7 +208,7 @@ public class DataMessage</code></pre>
 
   <h3 id="AICore_Services_Types_Request_DataMessage_role" data-uid="AICore.Services.Types.Request.DataMessage.role">
   role
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The role of the entity sending the message - can be &quot;system&quot;, &quot;user&quot;, or &quot;assistant&quot;.</p>
@@ -238,10 +237,72 @@ public class DataMessage</code></pre>
 
 
 
+  <h3 id="AICore_Services_Types_Request_DataMessage_tool_call_id" data-uid="AICore.Services.Types.Request.DataMessage.tool_call_id">
+  tool_call_id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CanBeNull]
+public string tool_call_id</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="AICore_Services_Types_Request_DataMessage_tool_calls" data-uid="AICore.Services.Types.Request.DataMessage.tool_calls">
+  tool_calls
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The possible function call associated with this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ToolChoice&gt; tool_calls</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AICore.Services.Types.Request.ToolChoice.html">ToolChoice</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/JTests/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L100" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Services/Types/Request/AITransformerRequest.cs/#L107" class="edit-link">Edit this page</a>
         </div>
 
         
