@@ -73,7 +73,8 @@
         <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAIEmbeddingRequest.cs" />
         <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAIRequest.cs" />
         <Compile Include="source\Infrastructure\NoSpoonAI\Types\Request\NoSpoonAITransformerPromptRequest.cs" />
-        <Compile Include="source\Infrastructure\OpenAI\OpenAIClient.cs" />
+        <Compile Include="source\Infrastructure\OpenAI\OpenAIAssistantsClient.cs" />
+        <Compile Include="source\Infrastructure\OpenAI\OpenAIRestAPIClient.cs" />
         <Compile Include="source\Infrastructure\OpenAI\OpenAIConstants.cs" />
         <Compile Include="source\Services\Extension\ModelExtension.cs" />
         <Compile Include="source\Services\Extension\RoleExtension.cs" />
@@ -98,6 +99,12 @@
         <Compile Include="source\Services\Types\Response\AIImageResponse.cs" />
         <Compile Include="source\Services\Types\Response\AITransformerResponse.cs" />
         <Compile Include="source\Services\Types\Response\AITransformerResponseInternal.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerAssistantListResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerAssistantResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerThreadListMessageResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerThreadMessageResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerThreadRunListResponse.cs" />
+        <Compile Include="source\Services\Types\Response\AITransformerThreadRunResponse.cs" />
         <Compile Include="source\Utils\AudioUtils.cs" />
         <Compile Include="source\Utils\FileReaderUtils.cs" />
         <Compile Include="source\Utils\MathUtils.cs" />

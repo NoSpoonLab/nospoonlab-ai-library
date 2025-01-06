@@ -13,7 +13,7 @@ using AICore.Services.Types.Response;
 
 namespace AICore.Infrastructure.OpenAI
 {
-    public class OpenAIClient : IAIGPTService, IAIImageService, IEmbeddingService
+    public partial class OpenAIClient : IAIGPTService, IAIImageService, IEmbeddingService
     {
         #region Properties
 
@@ -30,7 +30,7 @@ namespace AICore.Infrastructure.OpenAI
             var parameter = JsonConvert.SerializeObject(value);
             var response = await CreateRequest(OpenAIConstants.API_IMAGE_REQUEST, parameter);
 
-            if (response.StatusCode >= System.Net.HttpStatusCode.BadRequest)
+            if (response.StatusCode >= HttpStatusCode.BadRequest)
                 throw new Exception("[OpenAI] " + response.Content);
 
             return JsonConvert.DeserializeObject<AIImageResponse>(response.Content);
@@ -43,7 +43,7 @@ namespace AICore.Infrastructure.OpenAI
             var data = RequestToAPIInternal(value);
             var response = await CreateRequest(OpenAIConstants.API_CHAT_REQUEST, JsonConvert.SerializeObject(data));
             
-            if (response.StatusCode >= System.Net.HttpStatusCode.BadRequest)
+            if (response.StatusCode >= HttpStatusCode.BadRequest)
                 throw new Exception("[OpenAI] " + response.Content);
 
             var responseDataInternal = JsonConvert.DeserializeObject<AITransformerResponseInternal>(response.Content);
