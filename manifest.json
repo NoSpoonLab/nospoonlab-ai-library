@@ -1074,10 +1074,130 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerAssistantResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerAssistantResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Services.Types.Response.AITransformerResponse.yml",
       "output": {
         ".html": {
           "relative_path": "api/AICore.Services.Types.Response.AITransformerResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerResponseFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerResponseFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadListMessageResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadListMessageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadMessageResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadMessageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadRunListResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadRunListResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadRunResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadRunResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTextContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTextContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTruncationStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerThreadTruncationStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerToolOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerToolOutput.html"
         }
       },
       "version": ""
@@ -1308,6 +1428,26 @@
       "output": {
         ".html": {
           "relative_path": "api/AICore.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CleverAI.Models.Types.MM.AITransformerAssistantListResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CleverAI.Models.Types.MM.AITransformerAssistantListResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CleverAI.Models.Types.MM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CleverAI.Models.Types.MM.html"
         }
       },
       "version": ""

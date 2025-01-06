@@ -79,7 +79,7 @@
 
   <h1 id="AICore_Infrastructure_OpenAI_OpenAIClient" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient" class="text-break">
     Class OpenAIClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,11 +151,530 @@
 </h2>
 
 
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_AddMessageToThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.AddMessageToThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_AddMessageToThread_System_String_AICore_Services_Types_Request_DataMessage_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.AddMessageToThread(System.String,AICore.Services.Types.Request.DataMessage)">
+  AddMessageToThread(string, DataMessage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadMessageResponse&gt; AddMessageToThread(string threadId, DataMessage input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="AICore.Services.Types.Request.DataMessage.html">DataMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadMessageResponse.html">AITransformerThreadMessageResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_CancelRun_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CancelRun*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_CancelRun_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CancelRun(System.String,System.String)">
+  CancelRun(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; CancelRun(string threadId, string runId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_CreateAThreadAndRun_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CreateAThreadAndRun*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_CreateAThreadAndRun_System_String_System_Collections_Generic_List_AICore_Services_Types_Request_DataMessage__" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CreateAThreadAndRun(System.String,System.Collections.Generic.List{AICore.Services.Types.Request.DataMessage})">
+  CreateAThreadAndRun(string, List&lt;DataMessage&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; CreateAThreadAndRun(string assistantId, List&lt;DataMessage&gt; input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assistantId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AICore.Services.Types.Request.DataMessage.html">DataMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_CreateThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CreateThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_CreateThread_System_Collections_Generic_List_AICore_Services_Types_Request_DataMessage__" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.CreateThread(System.Collections.Generic.List{AICore.Services.Types.Request.DataMessage})">
+  CreateThread(List&lt;DataMessage&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadMessageResponse&gt; CreateThread(List&lt;DataMessage&gt; input = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AICore.Services.Types.Request.DataMessage.html">DataMessage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadMessageResponse.html">AITransformerThreadMessageResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_DeleteMessageFromThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.DeleteMessageFromThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_DeleteMessageFromThread_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.DeleteMessageFromThread(System.String,System.String)">
+  DeleteMessageFromThread(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteMessageFromThread(string threadId, string messageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>messageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_DeleteThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.DeleteThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_DeleteThread_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.DeleteThread(System.String)">
+  DeleteThread(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadMessageResponse&gt; DeleteThread(string threadId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadMessageResponse.html">AITransformerThreadMessageResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_GetAssistants_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetAssistants*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_GetAssistants" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetAssistants">
+  GetAssistants()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerAssistantListResponse&gt; GetAssistants()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="CleverAI.Models.Types.MM.AITransformerAssistantListResponse.html">AITransformerAssistantListResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_GetListRuns_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetListRuns*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_GetListRuns_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetListRuns(System.String)">
+  GetListRuns(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunListResponse&gt; GetListRuns(string threadId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunListResponse.html">AITransformerThreadRunListResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_GetMessageFromThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetMessageFromThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_GetMessageFromThread_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetMessageFromThread(System.String,System.String)">
+  GetMessageFromThread(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadMessageResponse&gt; GetMessageFromThread(string threadId, string messageId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>messageId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadMessageResponse.html">AITransformerThreadMessageResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_GetMessagesFromThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetMessagesFromThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_GetMessagesFromThread_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetMessagesFromThread(System.String)">
+  GetMessagesFromThread(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadListMessageResponse&gt; GetMessagesFromThread(string threadId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadListMessageResponse.html">AITransformerThreadListMessageResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_GetRun_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetRun*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_GetRun_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.GetRun(System.String,System.String)">
+  GetRun(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; GetRun(string threadId, string runId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_ModifyRun_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.ModifyRun*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_ModifyRun_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.ModifyRun(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+  ModifyRun(string, string, Dictionary&lt;string, string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; ModifyRun(string threadId, string runId, Dictionary&lt;string, string&gt; metadata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>metadata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_RunAssistantsThread_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.RunAssistantsThread*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_RunAssistantsThread_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.RunAssistantsThread(System.String,System.String)">
+  RunAssistantsThread(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; RunAssistantsThread(string threadId, string assistantId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>assistantId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_RunIsCompleted_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.RunIsCompleted*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_RunIsCompleted_System_String_System_String_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.RunIsCompleted(System.String,System.String)">
+  RunIsCompleted(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RunIsCompleted(string threadId, string runId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="AICore_Infrastructure_OpenAI_OpenAIClient_SendEmbeddingRequest_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SendEmbeddingRequest*"></a>
 
   <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_SendEmbeddingRequest_AICore_Services_Types_Request_AIEmbeddingRequest_AICore_Services_Types_Data_AIModel_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SendEmbeddingRequest(AICore.Services.Types.Request.AIEmbeddingRequest,AICore.Services.Types.Data.AIModel)">
   SendEmbeddingRequest(AIEmbeddingRequest, AIModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -193,7 +712,7 @@
 
   <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_SendImageRequest_AICore_Services_Types_Request_AIImageRequest_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SendImageRequest(AICore.Services.Types.Request.AIImageRequest)">
   SendImageRequest(AIImageRequest)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously sends an image request. The method takes detailed textual descriptions as input and produces realistic,
@@ -233,7 +752,7 @@ original images corresponding to the provided description.</p>
 
   <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_SendTransformerRequest_AICore_Services_Types_Request_AITransformerRequest_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SendTransformerRequest(AICore.Services.Types.Request.AITransformerRequest)">
   SendTransformerRequest(AITransformerRequest)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously sends a transformer request to be executed by a generative pre-trained transformer model.</p>
@@ -272,7 +791,7 @@ original images corresponding to the provided description.</p>
 
   <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_SetSettings_AICore_Services_Types_Data_AIServiceInitData_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SetSettings(AICore.Services.Types.Data.AIServiceInitData)">
   SetSettings(AIServiceInitData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the initial data settings for the AI Service.</p>
@@ -301,11 +820,51 @@ original images corresponding to the provided description.</p>
 
 
 
+  <a id="AICore_Infrastructure_OpenAI_OpenAIClient_SubmitToolOutputToRun_" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SubmitToolOutputToRun*"></a>
+
+  <h3 id="AICore_Infrastructure_OpenAI_OpenAIClient_SubmitToolOutputToRun_System_String_System_String_System_Collections_Generic_List_AICore_Services_Types_Response_AITransformerToolOutput__" data-uid="AICore.Infrastructure.OpenAI.OpenAIClient.SubmitToolOutputToRun(System.String,System.String,System.Collections.Generic.List{AICore.Services.Types.Response.AITransformerToolOutput})">
+  SubmitToolOutputToRun(string, string, List&lt;AITransformerToolOutput&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIAssistantsClient.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AITransformerThreadRunResponse&gt; SubmitToolOutputToRun(string threadId, string runId, List&lt;AITransformerToolOutput&gt; toolsOutput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>threadId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>toolsOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerToolOutput.html">AITransformerToolOutput</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="AICore.Services.Types.Response.AITransformerThreadRunResponse.html">AITransformerThreadRunResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIClient.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/NoSpoonLab/nospoonlab-ai-library/blob/master/ai-core/source/Infrastructure/OpenAI/OpenAIRestAPIClient.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
         
