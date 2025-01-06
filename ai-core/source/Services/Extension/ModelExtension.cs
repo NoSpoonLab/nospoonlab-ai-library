@@ -42,6 +42,20 @@ namespace AICore.Services.Extension
                     return "davinci";
                 case AIModel.embedding_ada_002:
                     return "text-embedding-ada-002";
+                case AIModel.none:
+                    throw new ArgumentOutOfRangeException(nameof(model), model, null);
+                case AIModel.text_embedding_3_small:
+                    return "text-embedding-3-small";
+                case AIModel.text_embedding_3_large:
+                    return "text-embedding-3-large";
+                case AIModel.embedding_bert_base_uncased:
+                case AIModel.embedding_bert_base_large_uncased:
+                case AIModel.embedding_bert_base_cased:
+                case AIModel.embedding_bert_base_large_cased:
+                case AIModel.embedding_bert_base_multilingual_cased:
+                case AIModel.embedding_bert_base_german_cased:
+                case AIModel.embedding_bert_custom:
+                case AIModel.local_model:
                 default:
                     throw new ArgumentOutOfRangeException(nameof(model), model, null);
             }

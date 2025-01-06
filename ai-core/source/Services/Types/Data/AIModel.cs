@@ -48,6 +48,8 @@
         /// <summary>
         /// Value representing the Ada text embedding model version 002.
         /// </summary>
+        text_embedding_3_small,
+        text_embedding_3_large,
         embedding_ada_002,
         embedding_bert_base_uncased,
         embedding_bert_base_large_uncased,
