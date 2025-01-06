@@ -4183,6 +4183,18 @@ references:
   commentId: F:AICore.Services.Types.Data.AIModel.o1_mini
   fullName: AICore.Services.Types.Data.AIModel.o1_mini
   nameWithType: AIModel.o1_mini
+- uid: AICore.Services.Types.Data.AIModel.text_embedding_3_large
+  name: text_embedding_3_large
+  href: api/AICore.Services.Types.Data.AIModel.html#AICore_Services_Types_Data_AIModel_text_embedding_3_large
+  commentId: F:AICore.Services.Types.Data.AIModel.text_embedding_3_large
+  fullName: AICore.Services.Types.Data.AIModel.text_embedding_3_large
+  nameWithType: AIModel.text_embedding_3_large
+- uid: AICore.Services.Types.Data.AIModel.text_embedding_3_small
+  name: text_embedding_3_small
+  href: api/AICore.Services.Types.Data.AIModel.html#AICore_Services_Types_Data_AIModel_text_embedding_3_small
+  commentId: F:AICore.Services.Types.Data.AIModel.text_embedding_3_small
+  fullName: AICore.Services.Types.Data.AIModel.text_embedding_3_small
+  nameWithType: AIModel.text_embedding_3_small
 - uid: AICore.Services.Types.Data.AIRole
   name: AIRole
   href: api/AICore.Services.Types.Data.AIRole.html
