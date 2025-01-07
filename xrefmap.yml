@@ -2456,31 +2456,31 @@ references:
   commentId: N:AICore.Infrastructure.Azure
   fullName: AICore.Infrastructure.Azure
   nameWithType: AICore.Infrastructure.Azure
-- uid: AICore.Infrastructure.Azure.AzureClient
-  name: AzureClient
-  href: api/AICore.Infrastructure.Azure.AzureClient.html
-  commentId: T:AICore.Infrastructure.Azure.AzureClient
-  fullName: AICore.Infrastructure.Azure.AzureClient
-  nameWithType: AzureClient
-- uid: AICore.Infrastructure.Azure.AzureClient.#ctor
-  name: AzureClient()
-  href: api/AICore.Infrastructure.Azure.AzureClient.html#AICore_Infrastructure_Azure_AzureClient__ctor
-  commentId: M:AICore.Infrastructure.Azure.AzureClient.#ctor
+- uid: AICore.Infrastructure.Azure.AzureAIClient
+  name: AzureAIClient
+  href: api/AICore.Infrastructure.Azure.AzureAIClient.html
+  commentId: T:AICore.Infrastructure.Azure.AzureAIClient
+  fullName: AICore.Infrastructure.Azure.AzureAIClient
+  nameWithType: AzureAIClient
+- uid: AICore.Infrastructure.Azure.AzureAIClient.#ctor
+  name: AzureAIClient()
+  href: api/AICore.Infrastructure.Azure.AzureAIClient.html#AICore_Infrastructure_Azure_AzureAIClient__ctor
+  commentId: M:AICore.Infrastructure.Azure.AzureAIClient.#ctor
   name.vb: New()
-  fullName: AICore.Infrastructure.Azure.AzureClient.AzureClient()
-  fullName.vb: AICore.Infrastructure.Azure.AzureClient.New()
-  nameWithType: AzureClient.AzureClient()
-  nameWithType.vb: AzureClient.New()
-- uid: AICore.Infrastructure.Azure.AzureClient.#ctor*
-  name: AzureClient
-  href: api/AICore.Infrastructure.Azure.AzureClient.html#AICore_Infrastructure_Azure_AzureClient__ctor_
-  commentId: Overload:AICore.Infrastructure.Azure.AzureClient.#ctor
+  fullName: AICore.Infrastructure.Azure.AzureAIClient.AzureAIClient()
+  fullName.vb: AICore.Infrastructure.Azure.AzureAIClient.New()
+  nameWithType: AzureAIClient.AzureAIClient()
+  nameWithType.vb: AzureAIClient.New()
+- uid: AICore.Infrastructure.Azure.AzureAIClient.#ctor*
+  name: AzureAIClient
+  href: api/AICore.Infrastructure.Azure.AzureAIClient.html#AICore_Infrastructure_Azure_AzureAIClient__ctor_
+  commentId: Overload:AICore.Infrastructure.Azure.AzureAIClient.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: AICore.Infrastructure.Azure.AzureClient.AzureClient
-  fullName.vb: AICore.Infrastructure.Azure.AzureClient.New
-  nameWithType: AzureClient.AzureClient
-  nameWithType.vb: AzureClient.New
+  fullName: AICore.Infrastructure.Azure.AzureAIClient.AzureAIClient
+  fullName.vb: AICore.Infrastructure.Azure.AzureAIClient.New
+  nameWithType: AzureAIClient.AzureAIClient
+  nameWithType.vb: AzureAIClient.New
 - uid: AICore.Infrastructure.Azure.Data
   name: AICore.Infrastructure.Azure.Data
   href: api/AICore.Infrastructure.Azure.Data.html
@@ -5272,6 +5272,51 @@ references:
   isSpec: "True"
   fullName: AICore.Services.Types.Response.AITransformerThreadContent.Type
   nameWithType: AITransformerThreadContent.Type
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete
+  name: AITransformerThreadDelete
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html
+  commentId: T:AICore.Services.Types.Response.AITransformerThreadDelete
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete
+  nameWithType: AITransformerThreadDelete
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Deleted
+  name: Deleted
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Deleted
+  commentId: P:AICore.Services.Types.Response.AITransformerThreadDelete.Deleted
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Deleted
+  nameWithType: AITransformerThreadDelete.Deleted
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Deleted*
+  name: Deleted
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Deleted_
+  commentId: Overload:AICore.Services.Types.Response.AITransformerThreadDelete.Deleted
+  isSpec: "True"
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Deleted
+  nameWithType: AITransformerThreadDelete.Deleted
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Id
+  name: Id
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Id
+  commentId: P:AICore.Services.Types.Response.AITransformerThreadDelete.Id
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Id
+  nameWithType: AITransformerThreadDelete.Id
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Id*
+  name: Id
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Id_
+  commentId: Overload:AICore.Services.Types.Response.AITransformerThreadDelete.Id
+  isSpec: "True"
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Id
+  nameWithType: AITransformerThreadDelete.Id
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Object
+  name: Object
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Object
+  commentId: P:AICore.Services.Types.Response.AITransformerThreadDelete.Object
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Object
+  nameWithType: AITransformerThreadDelete.Object
+- uid: AICore.Services.Types.Response.AITransformerThreadDelete.Object*
+  name: Object
+  href: api/AICore.Services.Types.Response.AITransformerThreadDelete.html#AICore_Services_Types_Response_AITransformerThreadDelete_Object_
+  commentId: Overload:AICore.Services.Types.Response.AITransformerThreadDelete.Object
+  isSpec: "True"
+  fullName: AICore.Services.Types.Response.AITransformerThreadDelete.Object
+  nameWithType: AITransformerThreadDelete.Object
 - uid: AICore.Services.Types.Response.AITransformerThreadListMessageResponse
   name: AITransformerThreadListMessageResponse
   href: api/AICore.Services.Types.Response.AITransformerThreadListMessageResponse.html
