@@ -6,7 +6,7 @@ using AIAgent;
 using AICore.Utils;
 using NUnit.Framework;
 
-namespace Tests.AgentTest.Language
+namespace Tests.AIAgentTest.Language
 {
     [TestFixture]
     public class EnglishAgentUnitTest : TestBase

@@ -57,19 +57,21 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="source\AgentTest\Data\SentenceEvaluateResultTestData.cs" />
-        <Compile Include="source\AgentTest\Data\SentenceEvaluateTestData.cs" />
+        <Compile Include="source\AIAgentTest\Data\SentenceEvaluateResultTestData.cs" />
+        <Compile Include="source\AIAgentTest\Data\SentenceEvaluateTestData.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="source\AgentTest\Language\EnglishAgentUnitTest.cs" />
-        <Compile Include="source\AgentTest\TestBase.cs" />
-        <Compile Include="source\NoSpoonAITest\Data\Request\FunctionTransformerPromptRequest.cs" />
-        <Compile Include="source\NoSpoonAITest\Data\Request\JSONSchemeTransformerPromptRequest.cs" />
-        <Compile Include="source\NoSpoonAITest\Data\Request\JSONTransformerPromptRequest.cs" />
-        <Compile Include="source\NoSpoonAITest\Data\Request\SimpleTransformerPromptRequest.cs" />
-        <Compile Include="source\NoSpoonAITest\Data\Response\JSONTransformerResult.cs" />
-        <Compile Include="source\NoSpoonAITest\NoSpoonAITest.cs" />
-        <Compile Include="source\ServicesTest\CloudServiceTest.cs" />
-        <Compile Include="source\ServicesTest\GoogleAITest.cs" />
+        <Compile Include="source\AIAgentTest\Language\EnglishAgentUnitTest.cs" />
+        <Compile Include="source\AIAgentTest\Language\TestBase.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\AzureAITest\AzureAITest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\GoogleAITest\GoogleAITest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\Data\Request\FunctionTransformerPromptRequest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\Data\Request\JSONSchemeTransformerPromptRequest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\Data\Request\JSONTransformerPromptRequest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\Data\Request\SimpleTransformerPromptRequest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\Data\Response\JSONTransformerResult.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\NoSpoonAITest\NoSpoonAITest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\OpenAITest\OpenAIAssistantsTest.cs" />
+        <Compile Include="source\AICoreTest\InfrastructureTest\OpenAITest\OpenAITest.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\ai-agent\ai-agent.csproj">
@@ -82,8 +84,9 @@
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="source\AgentTest\Data\Request\" />
-      <Folder Include="source\AgentTest\Data\Response\" />
+      <Folder Include="source\AIAgentTest\Data\Request\" />
+      <Folder Include="source\AIAgentTest\Data\Response\" />
+      <Folder Include="source\AICoreTest\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

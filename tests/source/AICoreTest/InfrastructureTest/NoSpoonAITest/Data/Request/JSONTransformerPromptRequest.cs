@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using AICore.Infrastructure.NoSpoonAI.Types.Data;
 using AICore.Infrastructure.NoSpoonAI.Types.Request;
-using Tests.NoSpoonAITest.Data.Response;
+using Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Response;
 
-namespace Tests.NoSpoonAITest.Data.Request
+namespace Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Request
 {
     public class JsonTransformerPromptRequest : NoSpoonAITransformerPromptRequest
     {

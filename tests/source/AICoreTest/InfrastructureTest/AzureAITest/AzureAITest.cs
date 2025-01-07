@@ -5,7 +5,7 @@ using AICore.Services.Interfaces;
 using AICore.Services.Types.Data;
 using NUnit.Framework;
 
-namespace Tests.ServicesTest
+namespace Tests.AICoreTest.InfrastructureTest.AzureAITest
 {
     public class CloudServiceTest
     {
@@ -20,7 +20,7 @@ namespace Tests.ServicesTest
         public CloudServiceTest()
         {
             //Inject Dependencies
-            _cloudService = new AzureClient();
+            _cloudService = new AzureAIClient();
             _cloudService.SetSettings(new VoiceServiceInitData
             {
                 APIKey = Environment.GetEnvironmentVariable("AZURE_API_KEY"),

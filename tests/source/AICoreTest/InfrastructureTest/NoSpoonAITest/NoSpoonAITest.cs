@@ -8,10 +8,10 @@ using AICore.Infrastructure.NoSpoonAI.Types.Request;
 using AICore.Services.Types.Data;
 using Newtonsoft.Json;
 using NUnit.Framework;
-using Tests.NoSpoonAITest.Data.Request;
-using Tests.NoSpoonAITest.Data.Response;
+using Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Request;
+using Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Response;
 
-namespace Tests.NoSpoonAITest
+namespace Tests.AICoreTest.InfrastructureTest.NoSpoonAITest
 {
     public class NoSpoonAITest
     {

@@ -3,7 +3,7 @@ using AICore.Infrastructure.NoSpoonAI.Types.Request;
 using AICore.Services.Types.Request;
 using Newtonsoft.Json;
 
-namespace Tests.NoSpoonAITest.Data.Request
+namespace Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Request
 {
     public class FunctionTransformerPromptRequest : NoSpoonAITransformerPromptRequest
     {

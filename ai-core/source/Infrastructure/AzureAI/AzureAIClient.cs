@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace AICore.Infrastructure.Azure
 {
-    public class AzureClient : ICloudService
+    public class AzureAIClient : ICloudService
     {
         #region Properties
 
@@ -24,7 +24,7 @@ namespace AICore.Infrastructure.Azure
 
         #region Initialization
 
-        public AzureClient() => _authToken = string.Empty;
+        public AzureAIClient() => _authToken = string.Empty;
 
         #endregion
 

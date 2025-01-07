@@ -2,7 +2,7 @@
 using AICore.Infrastructure.NoSpoonAI.Types.Data;
 using AICore.Infrastructure.NoSpoonAI.Types.Request;
 
-namespace Tests.NoSpoonAITest.Data.Request
+namespace Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Request
 {
     public class JSONSchemeTransformerPromptRequest : NoSpoonAITransformerPromptRequest
     {

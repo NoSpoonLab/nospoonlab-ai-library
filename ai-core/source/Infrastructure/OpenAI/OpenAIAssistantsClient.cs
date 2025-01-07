@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using AICore.Services.Extension;
 using AICore.Services.Types.Request;
 using AICore.Services.Types.Response;
 using CleverAI.Models.Types.MM;
@@ -15,12 +17,15 @@ namespace AICore.Infrastructure.OpenAI
 
         #region Public Methods
 
-        public Task<AITransformerThreadMessageResponse> CreateThread(List<DataMessage> input = null) =>
-            SendRequestAsync<AITransformerThreadMessageResponse>(
+        public async Task<AITransformerThreadMessageResponse> CreateThread(List<DataMessage> input = null)
+        {
+            var inputInternal = input != null ? TransformInputMessages(input) : null;
+            return await SendRequestAsync<AITransformerThreadMessageResponse>(
                 OpenAIConstants.API_URL + OpenAIConstants.API_THREAD_REQUEST,
                 HttpMethod.Post,
-                input != null ? new { messages = input } : null
+                new { messages = inputInternal }
             );
+        }
 
         public Task<AITransformerThreadMessageResponse> DeleteThread(string threadId) =>
             SendRequestAsync<AITransformerThreadMessageResponse>(
@@ -32,7 +37,7 @@ namespace AICore.Infrastructure.OpenAI
             SendRequestAsync<AITransformerThreadMessageResponse>(
                 OpenAIConstants.API_URL + OpenAIConstants.API_THREAD_REQUEST + $"/{threadId}/messages",
                 HttpMethod.Post,
-                input
+                TransformInputMessages(new List<DataMessage>{input})[0]
             );
 
         public Task<AITransformerThreadMessageResponse> GetMessageFromThread(string threadId, string messageId) =>
@@ -47,11 +52,14 @@ namespace AICore.Infrastructure.OpenAI
                 HttpMethod.Get
             );
 
-        public Task<bool> DeleteMessageFromThread(string threadId, string messageId) =>
-            SendRequestAsync<bool>(
+        public async Task<bool> DeleteMessageFromThread(string threadId, string messageId)
+        {
+            var request = await SendRequestAsync<AITransformerThreadDelete>(
                 OpenAIConstants.API_URL + OpenAIConstants.API_THREAD_REQUEST + $"/{threadId}/messages/{messageId}",
                 HttpMethod.Delete
             );
+            return request.Deleted;
+        }
 
         public Task<AITransformerThreadRunResponse> RunAssistantsThread(string threadId, string assistantId) =>
             SendRequestAsync<AITransformerThreadRunResponse>(
@@ -70,7 +78,7 @@ namespace AICore.Infrastructure.OpenAI
             SendRequestAsync<AITransformerThreadRunResponse>(
                 OpenAIConstants.API_URL + OpenAIConstants.API_THREAD_REQUEST + "/runs",
                 HttpMethod.Post,
-                new { assistant_id = assistantId, thread = new { messages = input } }
+                new { assistant_id = assistantId, thread = new { messages = TransformInputMessages(input) } }
             );
 
         public Task<AITransformerThreadRunListResponse> GetListRuns(string threadId) =>
@@ -98,11 +106,13 @@ namespace AICore.Infrastructure.OpenAI
             return true;
         }
 
-        public Task<AITransformerThreadRunResponse> CancelRun(string threadId, string runId) =>
-            SendRequestAsync<AITransformerThreadRunResponse>(
+        public Task<AITransformerThreadRunResponse> CancelRun(string threadId, string runId)
+        {
+            return SendRequestAsync<AITransformerThreadRunResponse>(
                 OpenAIConstants.API_URL + OpenAIConstants.API_THREAD_REQUEST + $"/{threadId}/runs/{runId}/cancel",
                 HttpMethod.Post
             );
+        }
 
         public Task<AITransformerThreadRunResponse> ModifyRun(string threadId, string runId, Dictionary<string, string> metadata) =>
             SendRequestAsync<AITransformerThreadRunResponse>(
@@ -154,6 +164,31 @@ namespace AICore.Infrastructure.OpenAI
                     throw new Exception($"Request failed: {response.StatusCode}\n{responseString}");
                 }
             }
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private List<AITransformerMessageInternal> TransformInputMessages(List<DataMessage> input)
+        {
+            return input.Select(it => new AITransformerMessageInternal
+            {
+                name = it.name,
+                role = RoleExtension.GetString(it.role),
+                content = it.content,
+                tool_call_id = string.IsNullOrEmpty(it.tool_call_id) ? null : it.tool_call_id,
+                tool_calls = it.tool_calls?.Select(subIt => new ToolChoiceInternal
+                {
+                    id = subIt.id,
+                    type = subIt.type,
+                    function = new FunctionToolChoiceInternal
+                    {
+                        name = subIt.function.name,
+                        arguments = subIt.function.arguments
+                    }
+                }).ToList()
+            }).ToList();
         }
 
         #endregion

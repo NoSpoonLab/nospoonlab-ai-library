@@ -1,4 +1,4 @@
-﻿namespace Tests.NoSpoonAITest.Data.Response
+﻿namespace Tests.AICoreTest.InfrastructureTest.NoSpoonAITest.Data.Response
 {
     public class JSONTransformerResult
     {

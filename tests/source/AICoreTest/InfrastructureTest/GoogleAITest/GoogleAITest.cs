@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using AICore.Infrastructure.GeminiAI;
-using AICore.Services.Types.Data;
-using AICore.Services.Types.Request;
 using NUnit.Framework;
 
-namespace Tests.ServicesTest
+namespace Tests.AICoreTest.InfrastructureTest.GoogleAITest
 {
     public class GoogleAITest
     {

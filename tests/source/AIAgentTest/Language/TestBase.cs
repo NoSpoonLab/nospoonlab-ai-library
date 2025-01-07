@@ -1,4 +1,4 @@
-namespace Tests.AgentTest
+namespace Tests.AIAgentTest.Language
 {
     public class TestBase
     {

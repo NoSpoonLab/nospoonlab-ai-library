@@ -1,6 +1,6 @@
 using System;
 
-namespace Tests.AgentTest.Data
+namespace Tests.AIAgentTest.Data
 {
     [Serializable]
     public class SentenceEvaluateResultTestData
