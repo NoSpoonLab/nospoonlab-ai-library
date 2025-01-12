@@ -414,40 +414,40 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.Azure.AzureAIClient.yml",
+      "source_relative_path": "api/AICore.Infrastructure.AzureAI.AzureAIClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.Azure.AzureAIClient.html"
+          "relative_path": "api/AICore.Infrastructure.AzureAI.AzureAIClient.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.Azure.Data.VoiceDataResponse.yml",
+      "source_relative_path": "api/AICore.Infrastructure.AzureAI.Data.VoiceDataResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.Azure.Data.VoiceDataResponse.html"
+          "relative_path": "api/AICore.Infrastructure.AzureAI.Data.VoiceDataResponse.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.Azure.Data.yml",
+      "source_relative_path": "api/AICore.Infrastructure.AzureAI.Data.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.Azure.Data.html"
+          "relative_path": "api/AICore.Infrastructure.AzureAI.Data.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.Azure.yml",
+      "source_relative_path": "api/AICore.Infrastructure.AzureAI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.Azure.html"
+          "relative_path": "api/AICore.Infrastructure.AzureAI.html"
         }
       },
       "version": ""
@@ -474,130 +474,130 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIAuthTokenRequest.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIAuthTokenRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIAuthTokenRequest.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIAuthTokenRequest.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataCandidate.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataCandidate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataCandidate.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataCandidate.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataContent.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataContent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataContent.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataContent.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataGenerationConfig.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataGenerationConfig.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataGenerationConfig.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataGenerationConfig.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataParts.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataParts.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataParts.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataParts.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataSafetyRating.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataSafetyRating.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataSafetyRating.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataSafetyRating.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataSafetySettings.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataSafetySettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataSafetySettings.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataSafetySettings.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataTransformRequest.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataTransformRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataTransformRequest.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataTransformRequest.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataTransformResponse.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataTransformResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataTransformResponse.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataTransformResponse.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataUsageMetadata.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataUsageMetadata.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.GoogleAIDataUsageMetadata.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.GoogleAIDataUsageMetadata.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.Data.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.Data.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.Data.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.Data.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.GoogleAIClient.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.GoogleAIClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.GoogleAIClient.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.GoogleAIClient.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Infrastructure.GeminiAI.yml",
+      "source_relative_path": "api/AICore.Infrastructure.GoogleAI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AICore.Infrastructure.GeminiAI.html"
+          "relative_path": "api/AICore.Infrastructure.GoogleAI.html"
         }
       },
       "version": ""
@@ -738,6 +738,326 @@
       "output": {
         ".html": {
           "relative_path": "api/AICore.Infrastructure.NoSpoonAI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.Data.OpenAIWebSocketEventTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.Data.OpenAIWebSocketEventTypeExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationCreatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationCreatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemCreatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemCreatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemDeletedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemDeletedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemInputAudioTranscriptionCompletedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemInputAudioTranscriptionCompletedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemInputAudioTranscriptionFailedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemInputAudioTranscriptionFailedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemTruncatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnConversationItemTruncatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnErrorHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferClearedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferClearedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferCommittedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferCommittedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferSpeechStartedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferSpeechStartedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferSpeechStoppedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnInputAudioBufferSpeechStoppedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnRateLimitsUpdatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnRateLimitsUpdatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioDeltaHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioDeltaHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioTranscriptDeltaHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioTranscriptDeltaHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioTranscriptDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseAudioTranscriptDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseContentPartAddedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseContentPartAddedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseContentPartDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseContentPartDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseCreatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseCreatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseFunctionCallArgumentsDeltaHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseFunctionCallArgumentsDeltaHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseFunctionCallArgumentsDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseFunctionCallArgumentsDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseOutputItemAddedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseOutputItemAddedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseOutputItemDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseOutputItemDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseTextDeltaHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseTextDeltaHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseTextDoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnResponseTextDoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnSessionCreatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnSessionCreatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnSessionUpdatedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.OnSessionUpdatedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.WebSocketClientEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.WebSocketClientEventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.WebSocketServerEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Infrastructure.OpenAI.OpenAIClient.WebSocketServerEventType.html"
         }
       },
       "version": ""
@@ -964,6 +1284,176 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketContentItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketContentItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemCreate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemDelete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemDelete.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemTruncate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketConversationItemTruncate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferAppend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferAppend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferClear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferClear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferCommit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketInputAudioBufferCommit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponseCancel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponseCancel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponseCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketResponseCreate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketSessionUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketSessionUpdate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketToolParameterProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketToolParameterProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketToolParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketToolParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketWelcome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Request.AITransformerWebSocketWelcome.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Services.Types.Request.DataMessage.yml",
       "output": {
         ".html": {
@@ -1068,6 +1558,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AICore.Services.Types.Response.AIImageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerAssistantListResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerAssistantListResponse.html"
         }
       },
       "version": ""
@@ -1214,6 +1714,396 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationCreated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationCreated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemCreated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemCreated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemDeleted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemDeleted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemInputAudioTranscriptionCompleted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemInputAudioTranscriptionCompleted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemInputAudioTranscriptionFailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemInputAudioTranscriptionFailed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemTruncated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketConversationItemTruncated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketErrorDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketErrorDetail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferCleared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferCleared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferCommitted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferCommitted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferSpeechStarted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferSpeechStarted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferSpeechStopped.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioBufferSpeechStopped.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioTranscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketInputAudioTranscription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketPart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketPart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketRateLimit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketRateLimit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketRateLimitsUpdated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketRateLimitsUpdated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioDelta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioTranscriptDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioTranscriptDelta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioTranscriptDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseAudioTranscriptDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseContentPartAdded.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseContentPartAdded.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseContentPartDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseContentPartDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseCreated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseCreated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseFunctionCallArgumentsDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseFunctionCallArgumentsDelta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseFunctionCallArgumentsDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseFunctionCallArgumentsDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseOutputItemAdded.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseOutputItemAdded.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseOutputItemDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseOutputItemDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseR.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseTextDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseTextDelta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseTextDone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketResponseTextDone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSessionCreated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSessionCreated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSessionUpdated.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketSessionUpdated.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketTurnDetection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketTurnDetection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.Response.AITransformerWebSocketUsage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Services.Types.Response.DataContent.yml",
       "output": {
         ".html": {
@@ -1284,6 +2174,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.WebsocketBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.WebsocketBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Services.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Services.Types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Services.yml",
       "output": {
         ".html": {
@@ -1344,6 +2254,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.Tokenizer.BERT.BERTTokens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.Tokenizer.BERT.BERTTokens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AICore.Utils.Tokenizer.BERT.BaseBERTTokenizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AICore.Utils.Tokenizer.BERT.BaseBERTTokenizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Utils.Tokenizer.BERT.BaseCasedBERTTokenizer.yml",
       "output": {
         ".html": {
@@ -1384,26 +2314,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Utils.Tokenizer.BERTTokens.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AICore.Utils.Tokenizer.BERTTokens.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AICore.Utils.Tokenizer.BaseBERTTokenizer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AICore.Utils.Tokenizer.BaseBERTTokenizer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AICore.Utils.Tokenizer.ITokenizer.yml",
       "output": {
         ".html": {
@@ -1438,26 +2348,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AICore.Utils.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CleverAI.Models.Types.MM.AITransformerAssistantListResponse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CleverAI.Models.Types.MM.AITransformerAssistantListResponse.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CleverAI.Models.Types.MM.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CleverAI.Models.Types.MM.html"
         }
       },
       "version": ""
