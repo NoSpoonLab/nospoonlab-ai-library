@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using AICore.Infrastructure.GeminiAI;
+using AICore.Infrastructure.GoogleAI;
 using NUnit.Framework;
 
 namespace Tests.AICoreTest.InfrastructureTest.GoogleAITest

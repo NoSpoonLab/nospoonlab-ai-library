@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using AICore.Infrastructure.Azure;
+using AICore.Infrastructure.AzureAI;
 using AICore.Services.Interfaces;
 using AICore.Services.Types.Data;
 using NUnit.Framework;
