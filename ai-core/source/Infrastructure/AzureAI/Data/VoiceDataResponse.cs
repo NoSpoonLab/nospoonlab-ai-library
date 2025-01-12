@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AICore.Infrastructure.Azure.Data
+namespace AICore.Infrastructure.AzureAI.Data
 {
     [Serializable]
     public class VoiceDataResponse

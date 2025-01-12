@@ -4,10 +4,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using AICore.Infrastructure.OpenAI.Data;
 using AICore.Services.Extension;
 using AICore.Services.Types.Request;
 using AICore.Services.Types.Response;
-using CleverAI.Models.Types.MM;
 using Newtonsoft.Json;
 
 namespace AICore.Infrastructure.OpenAI

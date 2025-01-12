@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using AICore.Services.Types.Response;
 using Newtonsoft.Json;
 
-namespace CleverAI.Models.Types.MM
+namespace AICore.Services.Types.Response
 {
     public class AITransformerAssistantListResponse
     {

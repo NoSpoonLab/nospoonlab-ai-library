@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using AICore.Infrastructure.Azure.Data;
+using AICore.Infrastructure.AzureAI.Data;
 using AICore.Services.Interfaces;
 using AICore.Services.Types.Data;
 using Newtonsoft.Json;
 
-namespace AICore.Infrastructure.Azure
+namespace AICore.Infrastructure.AzureAI
 {
     public class AzureAIClient : ICloudService
     {

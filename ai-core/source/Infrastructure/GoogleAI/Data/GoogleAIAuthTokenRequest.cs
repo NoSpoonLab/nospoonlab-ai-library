@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AICore.Infrastructure.GeminiAI.Data
+namespace AICore.Infrastructure.GoogleAI.Data
 {
     [Serializable]
     public struct GoogleAIAuthTokenRequest

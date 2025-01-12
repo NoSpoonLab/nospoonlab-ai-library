@@ -1,4 +1,4 @@
-﻿namespace AICore.Utils.Tokenizer
+﻿namespace AICore.Utils.Tokenizer.BERT
 {
     public class BERTTokens
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AICore.Infrastructure.GeminiAI.Data
+namespace AICore.Infrastructure.GoogleAI.Data
 {
     [Serializable]
     public struct GoogleAIDataTransformRequest

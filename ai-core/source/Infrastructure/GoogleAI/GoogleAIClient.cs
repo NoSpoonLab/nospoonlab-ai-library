@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using AICore.Infrastructure.GeminiAI.Data;
+using AICore.Infrastructure.GoogleAI.Data;
 using AICore.Services.Interfaces;
 using AICore.Services.Types.Data;
 using AICore.Services.Types.Request;
 using AICore.Services.Types.Response;
 using Newtonsoft.Json;
 
-namespace AICore.Infrastructure.GeminiAI
+namespace AICore.Infrastructure.GoogleAI
 {
     public class GoogleAIClient : IAIGPTService
     {

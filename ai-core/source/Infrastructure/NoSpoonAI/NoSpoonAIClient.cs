@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using AICore.Infrastructure.Embedding;
-using AICore.Infrastructure.GeminiAI;
+using AICore.Infrastructure.GoogleAI;
 using AICore.Infrastructure.NoSpoonAI.Types.Request;
-using AICore.Infrastructure.OpenAI;
 using AICore.Services.Interfaces;
 using AICore.Services.Types.Data;
 using AICore.Services.Types.Response;
+using OpenAIClient = AICore.Infrastructure.OpenAI.OpenAIClient;
 
 namespace AICore.Infrastructure.NoSpoonAI
 {

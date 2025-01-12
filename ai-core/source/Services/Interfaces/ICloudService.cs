@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using AICore.Infrastructure.Azure.Data;
+using AICore.Infrastructure.AzureAI.Data;
 using AICore.Services.Types.Data;
 
 namespace AICore.Services.Interfaces

@@ -1,11 +1,10 @@
-﻿using System.Linq;
-using System.Text.RegularExpressions;
+﻿using System;
 using System.Collections.Generic;
-using System;
 using System.IO;
-using AICore.Utils.Tokenizer.BERT;
+using System.Linq;
+using System.Text.RegularExpressions;
 
-namespace AICore.Utils.Tokenizer
+namespace AICore.Utils.Tokenizer.BERT
 {
     public abstract class BaseBERTTokenizer : IBERTTokenizer
     {

@@ -1,4 +1,4 @@
-﻿namespace AICore.Infrastructure.OpenAI
+﻿namespace AICore.Infrastructure.OpenAI.Data
 {
     internal static class OpenAIConstants
     {
@@ -11,6 +11,9 @@
         
         internal const string API_THREAD_REQUEST = "threads";
         internal const string API_ASSISTANTS_REQUEST = "assistants";
+        
+        internal const string WEB_SOCKET_URL = "wss://api.openai.com/v1/";
+        internal const string WEB_SOCKET_REALTIME_REQUEST = "realtime";
 
         #endregion
     }

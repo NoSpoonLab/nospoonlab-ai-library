@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 
 #pragma warning disable 0649
-namespace AICore.Infrastructure.Azure.Data
+namespace AICore.Infrastructure.AzureAI.Data
 {
     [Serializable]
     internal class VoiceDataResponseInternal
